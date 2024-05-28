@@ -11,35 +11,46 @@ html {
 }
 
 /* css flex box */
-.flex-container {
+.menu-flex-container {
   display: flex;
   justify-content:space-between;
   align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  -webkit-box-align: center;
   margin-top: 50px;
   padding: 20px;
   border-radius: 100px;
-  -webkit-box-align: center;
   width: 100%;
   box-sizing: border-box;
   background: #ffffff;
-  flex-direction: row;
   border: 1px solid black;
 }
 /* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 1116px) {
-  .flex-container {
+@media (max-width: 902px) {
+  .menu-flex-container {
     flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width:max-content;
+    margin:auto;
+    
   }
 }
 
+
+
 /* css span */
-.flex-container > span {
+.menu-flex-container > span {
   width: 100px;
   margin: 10px;
   text-align: center;
   line-height: 30px;
   font-size: 15px;
-  
+  margin-left:auto;
+  margin-right: auto;;
+  flex-wrap: nowrap;
 }
 
  span > a {
