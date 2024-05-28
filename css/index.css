@@ -1,0 +1,102 @@
+html {
+  height: 100%;
+  background-color: cadetblue;
+}
+.container-fluid {
+  background-color:cadetblue ;
+  height: 100%;
+  background-size: cover;
+  margin-left: 100px;
+  margin-right:100px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* css flex box */
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  padding: 25px;
+  border-radius: 100px;
+  -webkit-box-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  background: #ffffff;
+  flex-direction: row;
+  border: 1px solid black;
+}
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 1116px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+/* css span */
+.flex-container > span {
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 15px;
+  
+}
+
+ span > a {
+  text-decoration: none;
+  color: #353a44;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+ span > a:hover {
+  color: #ff0081;
+}
+ span > a > #buttonSignin {
+  color: #ffffff;
+  background-color: #333333;
+}
+
+/* css icon */
+.fa-facebook-f {
+  color: blue;
+  font-size: 20px;
+}
+.fa-twitter {
+  color: cornflowerblue;
+  font-size: 20px;
+}
+.fa-instagram {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 250px;
+  vertical-align: middle;
+  background: #d6249f;
+}
+.fa-wifi {
+  color: orange;
+}
+.Signin {
+  cursor: pointer;
+  background-color: #262121;
+  color: #ffffff;
+  border-radius: 30px;
+  outline: inherit;
+  font-weight: bolder;
+}
+.Signin:hover {
+  color: #d21596;
+  background-color: #ffffff;
+  border: #333333;
+}
