@@ -3,7 +3,7 @@ html {
   background-color: cadetblue;
 }
 .container-fluid {
-  background-color:cadetblue ;
+  background-color: cadetblue;
   height: 100%;
   background-size: cover;
   justify-content: center;
@@ -13,7 +13,7 @@ html {
 /* css flex box */
 .menu-flex-container {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -33,39 +33,31 @@ html {
     text-align: center;
     justify-content: center;
     align-items: center;
-    max-width:max-content;
-    margin:auto;
-    
+    max-width: max-content;
+    margin: auto;
   }
 }
 
-
-
-/* css span */
+/* css span item */
 .menu-flex-container > span {
   width: 100px;
   margin: 10px;
   text-align: center;
   line-height: 30px;
   font-size: 15px;
-  margin-left:auto;
-  margin-right: auto;;
+  margin-left: auto;
+  margin-right: auto;
   flex-wrap: nowrap;
 }
 
- span > a {
+span > a {
   text-decoration: none;
   color: #0b0d11;
   font-family: sans-serif;
   font-size: 15px;
-
 }
- span > a:hover {
+span > a:hover {
   color: #ff0081;
-}
- span > a > #buttonSignin {
-  color: #ffffff;
-  background-color: #333333;
 }
 
 /* css icon */
@@ -78,21 +70,8 @@ html {
   font-size: 20px;
 }
 .fa-instagram {
-  background: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 40px;
-  color: #fff;
   font-size: 20px;
-  line-height: 250px;
-  vertical-align: middle;
-  background: #d6249f;
+  color: #d6249f;
 }
 .fa-wifi {
   color: orange;
@@ -109,4 +88,52 @@ html {
   color: #d21596;
   background-color: #ffffff;
   border: #333333;
+}
+
+.img-content {
+  border-radius: 20px;
+  border: 1px solid black;
+}
+.left-content {
+  background: #c5c5fe;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.button-content {
+  border-radius: 20px;
+}
+
+/* css underline */
+.text-left-content {
+  font-size: 34px;
+  font-weight: bolder;
+  transition: text-decoration 0.8s;
+  position: relative;
+  cursor: pointer;
+}
+.text-left-content:hover {
+  text-decoration: underline;
+}
+
+.text-left-content::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transition: width 0.8s;
+}
+
+.text-left-content:hover::after {
+  width: 100%;
+}
+.img-jonathan{
+  border:1px solid black;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
