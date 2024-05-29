@@ -76,9 +76,12 @@ span > a:hover {
 .fa-wifi {
   color: orange;
 }
+.fa-earth-americas{
+  color:#ff4c60;
+}
 .Signin {
   cursor: pointer;
-  background-color: #726262;
+  background-color: #000000;
   color: #ffffff;
   border-radius: 30px;
   outline: inherit;
@@ -87,21 +90,53 @@ span > a:hover {
 .Signin:hover {
   color: #d21596;
   background-color: #ffffff;
-  border: #333333;
+  border: 1px solid black;
+  
 }
 
 .img-content {
   border-radius: 20px;
   border: 1px solid black;
 }
-.left-content {
+
+/* handle background left-content */
+.left-content,
+.icon-left-1 {
   background: #c5c5fe;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.left-content-2,
+.icon-left-2 {
+  background: #54cbca;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.left-content-3,
+.icon-left-3 {
+  background: #83ea6c;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.left-content-4,
+.icon-left-4 {
+  background: #85b2f4;
   border: 1px solid black;
   border-radius: 20px;
 }
 
 .button-content {
   border-radius: 20px;
+}
+
+/* hanle background right-content */
+.right-content {
+  background-color: #fffacd;
+  border-radius: 20px;
+  border: 1px solid black;
+  padding: 15px; /* Reduced padding for right-content */
+  margin-left: 60px;
+  margin-bottom: 150px;
 }
 
 /* css underline */
@@ -130,10 +165,59 @@ span > a:hover {
 .text-left-content:hover::after {
   width: 100%;
 }
-.img-jonathan{
-  border:1px solid black;
+
+/* css dropdown */
+li > .dropdown-item {
+  position: relative;
+}
+.dropdown > li:hover::before {
+  content: " --";
+  text-align: center;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  left: 0;
+}
+.dropdown > li:hover {
+  margin-left: 30px;
+}
+
+/* css avatar  */
+.img-jonathan {
+  border: 1px solid black;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.about-jonathanImg{
+  border: 1px solid black;
+  vertical-align: middle;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+/* css title right */
+.Title-right{
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 20px;
+  z-index:1;
+  position: relative;
+  top:-45px;
+  left:0;
+  right:0;
+}
+
+/* css icon right 3 */
+.icon-right-3{
+  border: 1px solid black;
   vertical-align: middle;
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  background-color: #ffffff;
+  margin:5px;
+  padding:10px;
 }
