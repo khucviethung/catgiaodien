@@ -65,8 +65,8 @@ span > a:hover {
 .fa-wifi {
   color: orange;
 }
-.fa-earth-americas{
-  color:#ff4c60;
+.fa-earth-americas {
+  color: #ff4c60;
 }
 .Signin {
   cursor: pointer;
@@ -186,7 +186,7 @@ li > .dropdown-item {
   border-radius: 50%;
 }
 
-.about-jonathanImg{
+.about-jonathanImg {
   border: 1px solid black;
   vertical-align: middle;
   width: 80px;
@@ -195,65 +195,114 @@ li > .dropdown-item {
 }
 
 /* css title right */
-.titleRight{
+.titleRight {
   background-color: #ffffff;
   border: 1px solid black;
   border-radius: 20px;
-  z-index:1;
+  z-index: 1;
   position: relative;
-  top:-45px;
-  left:0;
-  right:0;
+  top: -45px;
+  left: 0;
+  right: 0;
   font-size: 20px;
   font-family: sans-serif;
-  margin: 0 0 30px;
-  padding: 4px 25px;
+  justify-content: center;
+  align-items: center;
 }
 
 /* css icon right 3 */
-.icon-right-3{
+.icon-right-3 {
   border: 1px solid black;
   vertical-align: middle;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background-color: #ffffff;
-  margin:5px;
-  padding:10px;
+  margin: 5px;
+  padding: 10px;
 }
 
 /* css tag Cloud */
-.tagCloud > div > span{
+.tagCloud > div > span {
   background-color: #ffffff;
   border: 1px solid black;
   border-radius: 20px;
   font-size: 13px;
   font-family: sans-serif;
   margin: 0px 10px 12px 0px;
+  
 }
 
-h6{
+h6 {
   font-size: 12px;
+}
+
+/* css button prev next */
+#prev-btn,
+#next-btn {
+  background: #ffffff;
+  border: 1px solid black;
+  border-radius: 50%;
 }
 
 /* css carousel */
 .carousel {
   width: 80%;
   margin: 20px auto;
+  background-image: none;
 }
-.carousel-item{
-  display: flex;
+.carousel-item .col {
+  padding: 0 20px;
 }
-.navigation-container {
+.carousel-item {
   display: flex;
-  justify-content:flex-end;
+  justify-content: center;
   align-items: center;
-  margin: 20px 0;
+}
+
+.meetTheAuthor{
+  background: #ffffff;
+  border: 1px solid black;
+  border-radius: 100px;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 25px;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 30px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
 }
 
 .page-info {
   font-size: 16px;
 }
+
+.itemCarousel > .col > a > img {
+  border:1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  object-fit:cover;
+}
+
+.nameOfAuthors{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 20px;
+  z-index: 1;
+  position: relative;
+  top:-50px;
+  padding: 5px ;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+
+
+
 
 /* reponsive */
 /* Responsive layout - makes a one column layout instead of a two-column layout */
