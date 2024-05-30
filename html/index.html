@@ -3,6 +3,7 @@
 <link rel="stylesheet" href="../css/index.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<script src="../js/index.js"></script>
 
 <head>
     <meta charset="UTF-8">
@@ -51,7 +52,7 @@
 
             <!-- main content  -->
             <main class="content-homepage mt-5 mb-5 mx-auto">
-                <div class="row row-container">  <!-- content 1 -->
+                <section id="content-1" class="row row-container">  <!-- content 1 -->
                     <!-- content 1 left -->
                     <div class="col-8 left-content">
                         <div class="row mt-4 mx-auto">
@@ -82,7 +83,7 @@
                                 <div class="d-flex mt-5 justify-content-between text-dark align-items-center">
                                     <button class="button-content ps-4 pe-4 p-2">Continue Reading  <i class="fa-solid fa-arrow-right ms-1"></i> </button>
                                     <div class="p-2 me-2">
-                                        <img class="img-jonathan" src="../img/JonathanDoe.jpg.webp" >
+                                        <img class="img-jonathan" src="../assets/img/JonathanDoe.jpg.webp" >
                                         <span class="ms-2 me-2 ">Jonathan Doe</span>
                                     </div>
                                 </div>
@@ -93,10 +94,10 @@
 
                     <!-- content 1 right -->
                     <div class="col right-content p-4 ms-5">
-                            <h3 class="Title-right w-50 p-1 text-center fw-bolder">About Me </h3>
+                            <h4 class="titleRight w-50 p-1 text-center fw-bolder">About Me </h4>
                         <div class="row mx-auto">
                             <div class="col-3">
-                                <img class="about-jonathanImg" src="../img/JonathanDoe.jpg.webp" >
+                                <img class="about-jonathanImg" src="../assets/img/JonathanDoe.jpg.webp" >
                             </div>
                             <div class="col-9">
                                 <span class="ms-2 me-2 fw-bolder fs-5 ">Jonathan Doe</span>
@@ -118,9 +119,9 @@
                     </div>
                     
 
-                </div>
+                </section>
                 
-                <div class="row row-container mt-5 mb-5"> <!-- content 2 -->
+                <section id="content-2" class="row row-container mt-5 mb-5"> <!-- content 2 -->
                     <!-- content 2 left -->
                     <div class="col-8 left-content-2">
                         <div class="row mt-4 mb-4 mx-auto">
@@ -150,7 +151,7 @@
                                 <div class="d-flex mt-5 justify-content-between text-dark align-items-center">
                                     <button class="button-content ps-4 pe-4 p-2">Continue Reading  <i class="fa-solid fa-arrow-right ms-1"></i> </button>
                                     <div class="p-2 me-2">
-                                        <img class="img-jonathan" src="../img/JonathanDoe.jpg.webp" >
+                                        <img class="img-jonathan" src="../assets/img/JonathanDoe.jpg.webp" >
                                         <span class="ms-2 me-2 ">Jonathan Doe</span>
                                     </div>
                                   </div>
@@ -161,12 +162,46 @@
 
                     <!-- content 2 right -->
                     <div class="col right-content p-4 ms-5">
-                        col2
+                        <h4 class="titleRight w-75 p-1 text-center fw-bolder">Featured Articles</h4>
+                            <div class="row mt-4 mx-auto ">
+                                <div class="d-flex fw-bolder">
+                                    <div class="star-container">
+                                        <svg class="star" viewBox="0 0 100 100">
+                                          <polygon points="50,1 61,37 98,37 67,59 78,95 50,72 22,95 33,59 2,37 39,37" />
+                                        </svg>
+                                      </div>                                    
+                                      <img class="img-content mb-4 me-3 " src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2022/09/light-bulb-creative-business-idea-symbol-held-by-hand_53876-127176.jpg"
+                                        width="20%"
+                                        alt="">
+                                    <div>
+                                        <span class="">Building your audience with subscriber signups</span>
+                                        <h6 class="mt-2 fw-lighter ">Sep 25, 2022</h6>
+                                    </div> 
+                                </div>
+                                <div class="d-flex fw-bolder">
+                                    <img class="img-content mb-4 me-3 " src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2022/09/various-types-pumpkins-arranged-height-food-gravity-concept-autumn-halloween-theme_492182-203-1.jpg"
+                                    width="20%"
+                                    alt="">
+                                    <div>
+                                        <span class="">Selling memberships with recurring revenue</span>
+                                        <h6 class="mt-2 fw-lighter">Mar 16, 2021</h6>
+                                    </div> 
+                                </div>
+                                <div class=" d-flex fw-bolder">
+                                    <img class="img-content mb-4 me-3 " src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2022/09/illustration-yellow-blue-sneaker-sticker-cartoon_518759-157.jpg"
+                                    width="20%"
+                                    alt="">
+                                    <div>
+                                        <span class="">The spectacle before us was indeed sublime</span>
+                                        <h6 class="mt-2 fw-lighter">Apr 26, 2019</h6>
+                                    </div> 
+                                </div>
+                            </div>
                     </div>
-                </div>
+                </section>
 
 
-                <div class="row row-container mt-5 mb-5"> <!-- content 3 -->
+                <section id="content-3" class="row row-container mt-5 mb-5"> <!-- content 3 -->
                     <!-- content 3 left -->
                     <div class="col-8 left-content-3 ">
                         <div class="row mt-4 mb-4 mx-auto">
@@ -196,7 +231,7 @@
                                 <div class="d-flex mt-5 justify-content-between text-dark align-items-center">
                                     <button class="button-content ps-4 pe-4 p-2">Continue Reading  <i class="fa-solid fa-arrow-right ms-1"></i> </button>
                                     <div class="p-2 me-2">
-                                        <img class="img-jonathan" src="../img/JonathanDoe.jpg.webp" >
+                                        <img class="img-jonathan" src="../assets/img/JonathanDoe.jpg.webp" >
                                         <span class="ms-2 me-2 ">Jonathan Doe</span>
                                     </div>
                                   </div>
@@ -207,7 +242,7 @@
 
                     <!-- content 3 right -->
                     <div class="col right-content p-4 ms-5">
-                        <h3 class="Title-right w-50 p-1 text-center fw-bolder">Follow Me!</h3>
+                        <h4 class="titleRight w-50 p-1 text-center fw-bolder">Follow Me!</h4>
                         <div class="row mt-4 mx-auto ">
                             <h6 class="fw-bolder"> <i class="fa-brands fa-facebook-f icon-right-3"></i> Facebook </h6>
                             <h6 class="fw-bolder"> <i class="fa-brands fa-twitter icon-right-3"></i> Twitter </h6>
@@ -215,9 +250,9 @@
                             <h6 class="fw-bolder"> <i class="fa-solid fa-wifi icon-right-3"></i> RSS </h6>
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="row row-container mb-5"> <!-- content 4 -->
+                <section id="content-4" class="row row-container mb-5"> <!-- content 4 -->
                     <!-- content 4 left -->
                     <div class="col-8 left-content-4 mb-5">
                         <div class="row mt-4 mb-4 mx-auto">
@@ -248,7 +283,7 @@
                                 <div class="d-flex mt-5 justify-content-between text-dark align-items-center">
                                     <button class="button-content ps-4 pe-4 p-2">Continue Reading  <i class="fa-solid fa-arrow-right ms-1"></i> </button>
                                     <div class="p-2 me-2">
-                                        <img class="img-jonathan" src="../img/JonathanDoe.jpg.webp" >
+                                        <img class="img-jonathan" src="../assets/img/JonathanDoe.jpg.webp" >
                                         <span class="ms-2 me-2 ">Jonathan Doe</span>
                                     </div>
                                   </div>
@@ -259,11 +294,64 @@
 
                     <!-- content 4 right -->
                     <div class="col right-content p-4 ms-5">
-                        col4
+                        <h4 class="titleRight w-50 p-1 text-center fw-bolder">Tag Cloud</h4>
+                        <div class="tagCloud row mx-auto">
+                            <div class="d-inline-flex text-dark">
+                                <span class="p-2 ps-3 pe-3"><i class="fa-regular fa-circle-dot"></i> Getting Started</span>
+                                <span class="p-2 ms-3 ps-3 pe-3"><i class="fa-regular fa-circle-dot"></i> Health</span>
+                            </div>
+                            <div class="d-inline-flex text-dark">
+                                <span class="p-2 ps-3 pe-3"><i class="fa-regular fa-circle-dot"></i> Lifestyle</span>
+                                <span class="p-2 ps-3 pe-3"><i class="fa-regular fa-circle-dot"></i> Music</span>
+                            </div>
+                            <div class="d-inline-flex text-dark">
+                                <span class="p-2 ps-3 pe-3"><i class="fa-regular fa-circle-dot"></i> Technology</span>
+                                <span class="p-2 ps-3 pe-3"><i class="fa-regular fa-circle-dot"></i> Travel</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </section>
+
+                 
             </main>
-        </div>
+
+            <!-- carousel prev next -->
+            <div class="navigation-container">
+                <span id="page-info" class="mx-3"></span>
+                <button id="prev-btn" class="nav-btn">Previous</button>
+                <button id="next-btn" class="nav-btn">Next</button>
+            </div>
+
+            <!-- <div class="slider">
+                <span class="col-1">
+                    <img src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2023/11/young-happy-smiling-african-american-guy-yellow-hoodie-heard-very-funny-joke-laughed_295783-2454--1-.webp" 
+                    alt="" width="30%" height="100%">
+                    <img src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2022/09/malheureuse-jeune-femme-afro-americaine-regarde-ses-ongles-veut-faire-nouvelle-manucure-vetue-vetements-elegants_273609-46283.jpg" 
+                    alt="" width="30%" height="100%">
+                    <img src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2022/09/studio-portrait-young-african-american-man-posing-studio-background-looking-into-camera-with-shocked-facial-expression_295783-16901.jpg" 
+                    alt="" width="30%" height="100%">
+                    <img src="../assets/img/JonathanDoe.jpg.webp" alt="" width="40%" height="100%">
+                </span>
+              </div> -->
+
+              <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" >
+                    <img src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2023/11/young-happy-smiling-african-american-guy-yellow-hoodie-heard-very-funny-joke-laughed_295783-2454--1-.webp" 
+                        class="d-block w-25" alt="Slide 1">
+                  </div>
+                  <div class="carousel-item" >
+                    <img src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2022/09/malheureuse-jeune-femme-afro-americaine-regarde-ses-ongles-veut-faire-nouvelle-manucure-vetue-vetements-elegants_273609-46283.jpg" 
+                        class="d-block w-25" alt="Slide 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2022/09/studio-portrait-young-african-american-man-posing-studio-background-looking-into-camera-with-shocked-facial-expression_295783-16901.jpg" 
+                        class="d-block w-25" alt="Slide 3">
+                  </div>
+                </div>
+              </div>
+               
+   
         
     </div>
     

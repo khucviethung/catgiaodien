@@ -26,17 +26,6 @@ html {
   background: #ffffff;
   border: 1px solid black;
 }
-/* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 902px) {
-  .menu-flex-container {
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    max-width: max-content;
-    margin: auto;
-  }
-}
 
 /* css span item */
 .menu-flex-container > span {
@@ -91,7 +80,6 @@ span > a:hover {
   color: #d21596;
   background-color: #ffffff;
   border: 1px solid black;
-  
 }
 
 .img-content {
@@ -106,18 +94,21 @@ span > a:hover {
   border: 1px solid black;
   border-radius: 20px;
 }
+
 .left-content-2,
 .icon-left-2 {
   background: #54cbca;
   border: 1px solid black;
   border-radius: 20px;
 }
+
 .left-content-3,
 .icon-left-3 {
   background: #83ea6c;
   border: 1px solid black;
   border-radius: 20px;
 }
+
 .left-content-4,
 .icon-left-4 {
   background: #85b2f4;
@@ -147,6 +138,7 @@ span > a:hover {
   position: relative;
   cursor: pointer;
 }
+
 .text-left-content:hover {
   text-decoration: underline;
 }
@@ -170,6 +162,7 @@ span > a:hover {
 li > .dropdown-item {
   position: relative;
 }
+
 .dropdown > li:hover::before {
   content: " --";
   text-align: center;
@@ -179,6 +172,7 @@ li > .dropdown-item {
   bottom: 0;
   left: 0;
 }
+
 .dropdown > li:hover {
   margin-left: 30px;
 }
@@ -191,6 +185,7 @@ li > .dropdown-item {
   height: 30px;
   border-radius: 50%;
 }
+
 .about-jonathanImg{
   border: 1px solid black;
   vertical-align: middle;
@@ -198,8 +193,9 @@ li > .dropdown-item {
   height: 80px;
   border-radius: 50%;
 }
+
 /* css title right */
-.Title-right{
+.titleRight{
   background-color: #ffffff;
   border: 1px solid black;
   border-radius: 20px;
@@ -208,6 +204,10 @@ li > .dropdown-item {
   top:-45px;
   left:0;
   right:0;
+  font-size: 20px;
+  font-family: sans-serif;
+  margin: 0 0 30px;
+  padding: 4px 25px;
 }
 
 /* css icon right 3 */
@@ -220,4 +220,50 @@ li > .dropdown-item {
   background-color: #ffffff;
   margin:5px;
   padding:10px;
+}
+
+/* css tag Cloud */
+.tagCloud > div > span{
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-size: 13px;
+  font-family: sans-serif;
+  margin: 0px 10px 12px 0px;
+}
+
+h6{
+  font-size: 12px;
+}
+
+/* css carousel */
+.carousel {
+  width: 80%;
+  margin: 20px auto;
+}
+.carousel-item{
+  display: flex;
+}
+.navigation-container {
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.page-info {
+  font-size: 16px;
+}
+
+/* reponsive */
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 902px) {
+  .menu-flex-container {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: max-content;
+    margin: auto;
+  }
 }
