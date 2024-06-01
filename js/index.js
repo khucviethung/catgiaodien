@@ -14,17 +14,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   
     // Update page information
-    myCarousel.addEventListener('slid.bs.carousel', function(event) {
-      var totalSlides = document.querySelectorAll('#carouselInterval .carousel-item').length;
-      var currentSlide = event.to + 1; // 'to' gives the zero-based index of the current slide
-      document.getElementById('page-info').textContent = 'Page ' + currentSlide + ' of ' + totalSlides;
-    });
+    // myCarousel.addEventListener('slid.bs.carousel', function(event) {
+    //   var totalSlides = document.querySelectorAll('#carouselInterval .carousel-item').length;
+    //   var currentSlide = event.to + 1; // 'to' gives the zero-based index of the current slide
+    //   document.getElementById('page-info').textContent = 'Page ' + currentSlide + ' of ' + totalSlides;
+    // });
   
-    // Initialize page information
-    var totalSlides = document.querySelectorAll('#carouselInterval .carousel-item').length;
-    document.getElementById('page-info').textContent = 'Page 1 of ' + totalSlides;
+    // // Initialize page information
+    // var totalSlides = document.querySelectorAll('#carouselInterval .carousel-item').length;
+    // document.getElementById('page-info').textContent = 'Page 1 of ' + totalSlides;
   });
 
 
-  // handle drag
   

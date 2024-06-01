@@ -8,14 +8,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cắt giao diện homePage</title>
 </head>
 <body>
     
-    <div class="container-fluid">
-        <div class="render container ms-auto">
-            <!-- menu -->
-            <div class="menu-flex-container mx-auto">
+    <div class="parent-container-fluid">
+        <div class="render container ms-auto mb-5">
+            <!-- menu nav -->
+            <nav class="menu-flex-container mx-auto">
                 <img class="img-menu ms-lg-4 me-lg-5 " 
                 src="https://ghost.estudiopatagon.com/groovy/content/images/2022/08/logo-groovy-1.png" 
                 width="150" 
@@ -48,13 +48,13 @@
                 <span class="mx-lg-auto"><a href="#"class="ms-lg-5 mx-auto"><i class="fa-brands fa-twitter"></i></a></span>
                 <span class="mx-lg-auto"><a href="#" class="ms-lg-5 mx-auto"><i class="fa-brands fa-instagram"></i></a></span>
                 <span class="mx-lg-auto"><a href="#" class="ms-lg-5 mx-auto"><i class="fa-solid fa-wifi"></i></a></span>
-            </div>
+            </nav>
 
             <!-- main content  -->
-            <main class="content-homepage mt-5 mb-5 mx-auto">
+            <main class="content-homepage mt-5 mx-auto">
                 <section id="content-1" class="row row-container">  <!-- content 1 -->
                     <!-- content 1 left -->
-                    <div class="col-8 left-content">
+                    <article class="col-8 left-content">
                         <div class="row mt-4 mx-auto">
                             <div class="col-5">
                                 <img class="img-content" 
@@ -90,10 +90,10 @@
                             </div>
                         </div>
                         
-                    </div>
+                    </article>
 
                     <!-- content 1 right -->
-                    <div class="col right-content p-4 ms-5">
+                    <article class="col right-content p-4 ms-5">
                             <h4 class="titleRight w-50 p-1 text-center fw-bolder">About Me </h4>
                         <div class="row mx-auto">
                             <div class="col-3">
@@ -116,14 +116,12 @@
                                     markets, also, i offer live support via our ticket system.
                                 </p>
                         </div>
-                    </div>
-                    
-
+                    </article>
                 </section>
                 
                 <section id="content-2" class="row row-container mt-5 mb-5"> <!-- content 2 -->
                     <!-- content 2 left -->
-                    <div class="col-8 left-content-2">
+                    <article class="col-8 left-content-2">
                         <div class="row mt-4 mb-4 mx-auto">
                             <div class="col-5">
                                 <img class="img-content" 
@@ -158,10 +156,10 @@
                             </div>
                         </div>
                         
-                    </div>
+                    </article>
 
                     <!-- content 2 right -->
-                    <div class="col right-content p-4 ms-5">
+                    <article class="col right-content p-4 ms-5">
                         <h4 class="titleRight w-75 p-1 text-center fw-bolder">Featured Articles</h4>
                             <div class="row mt-4 mx-auto ">
                                 <div class="d-flex fw-bolder">
@@ -197,13 +195,12 @@
                                     </div> 
                                 </div>
                             </div>
-                    </div>
+                    </article>
                 </section>
-
 
                 <section id="content-3" class="row row-container mt-5 mb-5"> <!-- content 3 -->
                     <!-- content 3 left -->
-                    <div class="col-8 left-content-3 ">
+                    <article class="col-8 left-content-3 ">
                         <div class="row mt-4 mb-4 mx-auto">
                             <div class="col-5">
                                 <img class="img-content" 
@@ -238,10 +235,10 @@
                             </div>
                         </div>
                         
-                    </div>
+                    </article>
 
                     <!-- content 3 right -->
-                    <div class="col right-content p-4 ms-5">
+                    <article class="col right-content p-4 ms-5">
                         <h4 class="titleRight w-50 p-1 text-center fw-bolder">Follow Me!</h4>
                         <div class="row mt-4 mx-auto ">
                             <h6 class="fw-bolder"> <i class="fa-brands fa-facebook-f icon-right-3"></i> Facebook </h6>
@@ -249,12 +246,12 @@
                             <h6 class="fw-bolder"> <i class="fa-brands fa-instagram icon-right-3"></i> Instagram </h6>
                             <h6 class="fw-bolder"> <i class="fa-solid fa-wifi icon-right-3"></i> RSS </h6>
                         </div>
-                    </div>
+                    </article>
                 </section>
 
                 <section id="content-4" class="row row-container mb-5"> <!-- content 4 -->
                     <!-- content 4 left -->
-                    <div class="col-8 left-content-4 mb-5">
+                    <article class="col-8 left-content-4 mb-5">
                         <div class="row mt-4 mb-4 mx-auto">
                             <div class="col-5">
                                 <img class="img-content" 
@@ -290,10 +287,10 @@
                             </div>
                         </div>
                         
-                    </div>
+                    </article>
 
                     <!-- content 4 right -->
-                    <div class="col right-content p-4 ms-5">
+                    <article class="col right-content p-4 ms-5">
                         <h4 class="titleRight w-50 p-1 text-center fw-bolder">Tag Cloud</h4>
                         <div class="tagCloud row mx-auto">
                             <div class="d-inline-flex text-dark">
@@ -309,7 +306,7 @@
                                 <span class="p-2 ps-3 pe-3"><i class="fa-regular fa-circle-dot"></i> Travel</span>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </section>
 
 
@@ -319,7 +316,7 @@
                     <span class="meetTheAuthor justify-content-center align-item">Meet the Authors</span>
                     <div class="navigation-container">
                         <span class="float-start"></span>
-                        <span id="page-info" class="mx-3 "></span>
+                        <!-- <span id="page-info" class="mx-3 "></span> -->
                         <button id="prev-btn" class="nav-btn me-3"><i class="fa-solid fa-arrow-left fs-1"></i></button>
                         <button id="next-btn" class="nav-btn"><i class="fa-solid fa-arrow-right fs-1"></i></button>
                     </div>
@@ -328,89 +325,211 @@
                 <!-- Carousel -->
                 <div id="carouselInterval" class="carousel slide container-fluid " data-bs-ride="carousel">
                     <div class="carousel-inner">     
-                                <div class="carousel-item active mb-5">
+                                <section class="carousel-item active mb-5">
                                     <div class="itemCarousel row">
-                                        <div class="col">
+                                        <article class="col">
                                             <a href="#">
                                                 <img src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2023/11/young-happy-smiling-african-american-guy-yellow-hoodie-heard-very-funny-joke-laughed_295783-2454--1-.webp" 
                                                 class= "d-block w-100 h-100" alt="Slide 1" title="Acticle: 5">
                                             </a>
                                             <h4 class="nameOfAuthors w-75 mx-auto">Jonathan Doe</h4>
-                                        </div>
-                                        <div class="col">
+                                        </article>
+                                        <article class="col">
                                             <a href="#">
                                                 <img src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2022/09/malheureuse-jeune-femme-afro-americaine-regarde-ses-ongles-veut-faire-nouvelle-manucure-vetue-vetements-elegants_273609-46283.jpg" 
                                                 class="d-block w-100 h-100" alt="Slide 2" title="Acticle: 3">
                                             </a>
                                             <h4 class="nameOfAuthors w-75 mx-auto">Mary Buzard</h4>
-                                        </div>
-                                        <div class="col">
+                                        </article>
+                                        <article class="col">
                                             <a href="#">
                                                 <img src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2022/09/studio-portrait-young-african-american-man-posing-studio-background-looking-into-camera-with-shocked-facial-expression_295783-16901.jpg" 
                                                 class= "d-block w-100 h-100" alt="Slide 3" title="Acticle: 3">
                                             </a>
                                             <h4 class="nameOfAuthors w-75 mx-auto">James Brawson</h4>
-                                        </div>
-                                        <div class="col">
+                                        </article>
+                                        <article class="col">
                                             <a href="#">
                                                 <img src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2023/11/bel-homme-europeen-joyeux-sourit-agreablement-garde-mains-ecouteurs-stereo-sans-fil-expression-visage-optimiste-aime-ecouter-musique-pendant-poses-temps-libre-interieur-concept-passe-temps_273609-56815--1-.webp" 
                                                 class= "d-block w-100 h-100" alt="Slide 4" title="Acticle: 2">
                                             </a>
                                             <h4 class="nameOfAuthors w-75 mx-auto">Joseph Fracis</h4>
-                                        </div>
-                                        <div class="col">
+                                        </article>
+                                        <article class="col">
                                             <a href="#">
                                                 <img src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2022/09/smiling-girl-holding-flowerpoint-glass-water-purple-background-high-quality-photo_144627-75115.webp" 
                                                 class= "d-block w-100 h-100" alt="Slide 5" title="Acticle: 1">
                                             </a>
                                             <h4 class="nameOfAuthors w-75 mx-auto">Brenda Hitchell</h4>
-                                        </div>
+                                        </article>
                                     </div>
-                                </div>
-                                <div class="carousel-item mb-5">
+                                </section>
+                                <section class="carousel-item mb-5">
                                     <div class="itemCarousel row">
-                                        <div class="col">
+                                        <article class="col">
                                             <a href="#">
                                                 <img src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2022/09/horizontal-shot-upbeat-dark-haired-woman-uses-headphones-moves-body-enjoys-new-playlist-cheerful-expression-likes-tune-wears-yellow-jacket-smiles-broadly-has-fun_273609-54580-2.jpg" 
                                                 class= "d-block w-100 h-100" alt="Slide 6" title="Acticle: 1">
                                             </a>
                                             <h4 class="nameOfAuthors w-75 mx-auto">Emily Allen</h4>
-                                        </div>
-                                        <div class="col">
+                                        </article>
+                                        <article class="col">
                                             <a href="#">
                                             <img src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2023/11/young-happy-smiling-african-american-guy-yellow-hoodie-heard-very-funny-joke-laughed_295783-2454--1-.webp" 
                                                 class= "d-block w-100 h-100" alt="Slide 7" title="Acticle: 5">
                                             </a>
                                             <h4 class="nameOfAuthors w-75 mx-auto">Jonathan Doe</h4>
-                                        </div>
-                                        <div class="col">
+                                        </article>
+                                        <article class="col">
                                             <a href="#">
                                                 <img src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2022/09/malheureuse-jeune-femme-afro-americaine-regarde-ses-ongles-veut-faire-nouvelle-manucure-vetue-vetements-elegants_273609-46283.jpg" 
                                                 class= "d-block w-100 h-100" alt="Slide 8" title="Acticle: 3">
                                             </a>
                                             <h4 class="nameOfAuthors w-75 mx-auto">Mary Buzard</h4>
-                                        </div>
-                                        <div class="col">
+                                        </article>
+                                        <article class="col">
                                             <a href="#">
                                                 <img src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2022/09/studio-portrait-young-african-american-man-posing-studio-background-looking-into-camera-with-shocked-facial-expression_295783-16901.jpg" 
                                                 class= "d-block w-100 h-100" alt="Slide 9" title="Acticle: 3">
                                             </a>
                                             <h4 class="nameOfAuthors w-75 mx-auto">James Brawson</h4>
-                                        </div>
-                                        <div class="col">
+                                        </article>
+                                        <article class="col">
                                             <a href="#">
                                                 <img src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2023/11/bel-homme-europeen-joyeux-sourit-agreablement-garde-mains-ecouteurs-stereo-sans-fil-expression-visage-optimiste-aime-ecouter-musique-pendant-poses-temps-libre-interieur-concept-passe-temps_273609-56815--1-.webp" 
                                                 class= "d-block w-100 h-100" alt="Slide 10" title="Acticle: 2">
                                             </a>
                                             <h4 class="nameOfAuthors w-75 mx-auto">Joseph Fracis</h4>
-                                        </div>
+                                        </article>
                                     </div>
-                                </div>
+                                </section>
+                    </div>
                 </div>
-                </div>
-            </main>
+            </main>  
+        </div>  
 
-            
+         <!-- Footer -->
+        <footer class="footer container-fluid mx-auto">
+            <div class="row ms-5">    <!-- content 1 -->
+                <article class="col mt-5">
+                    <img class="mb-5" src="https://ghost.estudiopatagon.com/groovy/content/images/2022/08/logo-groovy-1.png" alt=""
+                    width="50%">
+                    <p>A super modern theme following the latest trends with premium Membership and fully compatible with Ghost.</p>
+                    <p>Check more themes like this on <a class="text-decoration-none text-dark" href="estudiodivatagon.com"><b>estudiodivatagon.com</b></a> </p>
+                </article>
+
+                <article class="col"> 
+                    <h4 class="titleFooter w-50 p-1 ms-3 text-center fw-bolder">Latest Articles</h4>
+                        <div class="row mx-auto mt-4 ">
+                            <div class="d-flex fw-bolder">
+                                <!-- <div class="star-container">
+                                    <svg class="star" viewBox="0 0 100 100">
+                                    <polygon points="50,1 61,37 98,37 67,59 78,95 50,72 22,95 33,59 2,37 39,37" />
+                                    </svg>
+                                </div>                                     -->
+                                <img class="img-content mb-4 me-3 " src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2022/09/light-bulb-creative-business-idea-symbol-held-by-hand_53876-127176.jpg"
+                                width="20%"
+                                alt="">
+                                <div>
+                                    <span class="">Building your audience with subscriber signups</span>
+                                    <h6 class="mt-2 fw-lighter ">Sep 25, 2022</h6>
+                                </div> 
+                            </div>
+                            <div class="d-flex fw-bolder">
+                                <img class="img-content mb-4 me-3 " src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2022/08/layered-number-one-stylized-typography_53876-96387.webp"
+                                width="20%"
+                                alt="">
+                                <div>
+                                    <span class="">Selling memberships with recurring revenue</span>
+                                    <h6 class="mt-2 fw-lighter">Mar 16, 2021</h6>
+                                </div> 
+                            </div>
+                            <div class=" d-flex fw-bolder">
+                                <img class="img-content mb-4 me-3 " src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2022/09/various-types-pumpkins-arranged-height-food-gravity-concept-autumn-halloween-theme_492182-203-1.jpg"
+                                width="20%"
+                                alt="">
+                                <div>
+                                    <span class="">The spectacle before us was indeed sublime</span>
+                                    <h6 class="mt-2 fw-lighter">Apr 26, 2019</h6>
+                                </div> 
+                            </div>
+                        </div>
+                </article>
+
+                <article class="col"> 
+                    <h4 class="titleFooter w-50 p-1 ms-3 text-center fw-bolder">Tag Cloud</h4>
+                    <div class="tagCloud row mx-auto mt-4">
+                        <div class="d-inline-flex text-dark">
+                            <span class="p-2 ps-3 pe-3"><i class="fa-regular fa-circle-dot"></i> Getting Started</span>
+                            <span class="p-2 ms-3 ps-3 pe-3"><i class="fa-regular fa-circle-dot"></i> Health</span>
+                        </div>
+                        <div class="d-inline-flex text-dark">
+                            <span class="p-2 ps-3 pe-3"><i class="fa-regular fa-circle-dot"></i> Lifestyle</span>
+                            <span class="p-2 ps-3 pe-3"><i class="fa-regular fa-circle-dot"></i> Music</span>
+                        </div>
+                        <div class="d-inline-flex text-dark">
+                            <span class="p-2 ps-3 pe-3"><i class="fa-regular fa-circle-dot"></i> Technology</span>
+                            <span class="p-2 ps-3 pe-3"><i class="fa-regular fa-circle-dot"></i> Travel</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col">
+                        <h4 class="titleFooter w-50 p-1 ms-3 text-center fw-bolder">Follow Me!</h4>
+                        <div class="row mx-auto mt-4">
+                            <h6 class="fw-bolder"> <i class="fa-brands fa-facebook-f icon-right-3"></i> Facebook </h6>
+                            <h6 class="fw-bolder"> <i class="fa-brands fa-twitter icon-right-3"></i> Twitter </h6>
+                            <h6 class="fw-bolder"> <i class="fa-brands fa-instagram icon-right-3"></i> Instagram </h6>
+                            <h6 class="fw-bolder"> <i class="fa-solid fa-wifi icon-right-3"></i> RSS </h6>
+                        </div>
+                </article>
+            </div>
+
+            <div class="subscribeFooter container text-center">   <!-- content 2 -->
+                <form action="" class="subscribe-form">
+                    <h4 class="titleForm mt-5 mb-5">Subscribe to our Newsletter</h4>
+                    <div class="form-group mt-3 ms-5">
+                        <input type="email" name="email" class="inputForm ms-5" placeholder="Enter your email address" required>
+                        <button class=" submitButton" type="submit" data-title="Submit">
+                            <span>Submit</span>
+                        </button>
+                    </div>
+                    <span class="subscribe-decoration"></span>
+                </form>
+                
+                <p class="description mt-4 text-center">Subscribe to our email newsletter and unlock access to 
+                    <b>members-only</b>
+                    content and 
+                    <b>exclusive updates.</b>
+                </p>
+
+                <nav class="grid-container grid-small text-center">
+                    <ul class="menuFooter d-flex justify-content-center align-items-center" style="list-style: none;">
+                        <li>
+                            <a href=""> Terms & Conditions </a>
+                        </li>
+                        <li>
+                            <span> &nbsp |  &nbsp</span>
+                            <a href=""> Faq </a>
+                        </li>
+                        <li>
+                            <span> &nbsp |  &nbsp</span>
+                            <a href=""> Privacy Policy </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <p class="text-center">         <!-- content 3 -->
+                Published with 
+                <b>Ghost</b>
+                &
+                <b>EstudioPatagon</b>  
+            </p>
+        </footer> 
+    </div>  
+     
+   
 
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
