@@ -1,15 +1,19 @@
 html,
 body {
-  background-color: #54cbca;
-  height: 100%;
+  background-color: #54cbca !important;
   font: 16px;
-  font-family:sans-serif;
+  font-family: sans-serif;
   letter-spacing: 0.3px;
   word-wrap: break-word;
-  background-image: url(https://ghost.estudiopatagon.com/groovy/assets/images/background-decoration.svg);
-  background-repeat: no-repeat;
-  background-position: left right ;
-  background-attachment: fixed;
+  background-image: url(https://ghost.estudiopatagon.com/groovy/assets/images/background-decoration.svg),
+                    url(https://ghost.estudiopatagon.com/groovy/assets/images/background-decoration.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 9.5% 95px, 90.5% 95px;
+  background-attachment: fixed, fixed;
+  background-origin: padding-box;
+  background-size: 150px;
+  width: auto;
+  height: auto;
 }
 
 footer {
@@ -145,12 +149,12 @@ ul.menu {
   left: -20px;
   top: 0;
   bottom: 0;
-  right:-20px;
+  right: -20px;
   width: 0;
   transition: margin-left 0.1s ease-in-out;
 }
 
-.sub-menu li a:hover{
+.sub-menu li a:hover {
   margin-left: 15px;
   transition: margin-left 0.1s ease-in-out;
 }
@@ -171,47 +175,33 @@ ul.menu {
 }
 
 /* login Button */
-.signinButton:not(.nav-menu ul.menu){
+.signinButton:not(.nav-menu ul.menu) {
   background-image: none;
   background-color: #000;
   border: 1px solid black;
-  color:#fff;
+  color: #fff;
   border-radius: 20px;
-  padding:5px 20px;
+  padding: 5px 20px;
   font-family: sans-serif;
-  font-weight:bolder;
+  font-weight: bolder;
 }
 
-.signinButton:not(.nav-menu ul.menu):hover{
+.signinButton:not(.nav-menu ul.menu):hover {
   box-shadow: 2px 2px #443c3c;
   transform: translate3d(-2px, -2px, 0);
   transition: transform 0.3s cubic-bezier(1, 0, 0, 1);
   cursor: pointer;
   background-color: #fff;
-  color:#000;
+  color: #000;
 }
 
-.signinButton:not(.nav-menu ul.menu):hover{
+.signinButton:not(.nav-menu ul.menu):hover {
   box-shadow: 2px 2px #443c3c;
   transform: translate3d(-2px, -2px, 0);
 }
 
-
-
 /* content css */
 /* main content */
-.parent-container-fluid {
-  background-color: #54cbca;
-  background-image: url(https://ghost.estudiopatagon.com/groovy/assets/images/background-decoration.svg);
-  background-position: left right;
-  background-repeat: repeat;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  justify-content: center;
-  align-items: center;
-}
-
 .bg-box {
   background-color: #fffacd;
   border-radius: 15px;
@@ -248,12 +238,6 @@ ul.menu {
 }
 
 /* hover button all*/
-
-
-
-
-
-
 
 /* css icon */
 .fa-facebook-f {
@@ -727,10 +711,10 @@ h6 {
 }
 
 /* number footer */
-.number{
+.number {
   position: absolute;
   z-index: 3;
-  left:425px;
+  left: 425px;
   width: 30px;
   height: 30px;
   text-align: center;
@@ -738,12 +722,9 @@ h6 {
   font-family: sans-serif;
   font-weight: 700;
   color: #000;
-  background: url(https://ghost.estudiopatagon.com/groovy/assets/images/number-decoration.svg) no-repeat center center;
+  background: url(https://ghost.estudiopatagon.com/groovy/assets/images/number-decoration.svg)
+    no-repeat center center;
 }
-
-
-
-
 
 /* reponsive */
 /* Responsive layout - makes a one column layout instead of a two-column layout */
