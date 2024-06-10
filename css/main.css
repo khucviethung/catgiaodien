@@ -1,8 +1,15 @@
 html,
 body {
-  background-color: cadetblue;
+  background-color: #54cbca;
   height: 100%;
   font: 16px;
+  font-family:sans-serif;
+  letter-spacing: 0.3px;
+  word-wrap: break-word;
+  background-image: url(https://ghost.estudiopatagon.com/groovy/assets/images/background-decoration.svg);
+  background-repeat: no-repeat;
+  background-position: left right ;
+  background-attachment: fixed;
 }
 
 footer {
@@ -194,10 +201,11 @@ ul.menu {
 /* content css */
 /* main content */
 .parent-container-fluid {
-  background-color: cadetblue;
+  background-color: #54cbca;
   background-image: url(https://ghost.estudiopatagon.com/groovy/assets/images/background-decoration.svg);
-  background-repeat: no-repeat;
-  background-position: left center, right center;
+  background-position: left right;
+  background-repeat: repeat;
+  width: 100%;
   height: 100%;
   background-size: cover;
   justify-content: center;
