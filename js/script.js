@@ -27,16 +27,16 @@
 
    
     function activePage(page) {
-        acticles.forEach((acticle, index) => {
-            acticle.style.display = 'none';
+        acticles.forEach((item, index) => {
+            item.style.display = 'none';
             const start = (page - 1) * itemsPerPage;
             const end = page * itemsPerPage;
             if (index >= start && index < end ) {
-                acticle.style.display = 'block';    // tạo thành 1 block mới khi ở trang mới
+                item.style.display = 'block';    // tạo thành 1 block mới khi ở trang mới
                 buttonNavigation.textContent = "Previous";
             }
             else{
-                acticle.style.display = 'hidden'
+                item.style.display = 'hidden'
                 buttonNavigation.textContent = "Next"     
             }
         });
