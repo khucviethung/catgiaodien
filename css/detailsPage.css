@@ -31,7 +31,7 @@ footer {
 
 /* hover img all */
 button:hover,
-img:hover {
+img:hover:not(.img-menu) {
   box-shadow: 2px 2px #443c3c;
   transform: translate3d(-2px, -2px, 0);
   transition: transform 0.3s cubic-bezier(1, 0, 0, 1);
@@ -39,7 +39,7 @@ img:hover {
 }
 
 button:active,
-img:active {
+img:active:not(.img-menu) {
   box-shadow: 2px 2px #443c3c;
   transform: translate3d(-2px, -2px, 0);
 }
@@ -221,24 +221,8 @@ ul.menu {
   z-index: 2;
 }
 
-#articles-of-leftcontent article:nth-child(1),
-#articles-of-leftcontent article:nth-child(8) {
+#articles-of-leftcontent article {
   background-color: #c5c5fe;
-}
-
-#articles-of-leftcontent article:nth-child(2),
-#articles-of-leftcontent article:nth-child(6) {
-  background-color: #1dd7c2;
-}
-
-#articles-of-leftcontent article:nth-child(3),
-#articles-of-leftcontent article:nth-child(7) {
-  background-color: #83ea6c;
-}
-
-#articles-of-leftcontent article:nth-child(4),
-#articles-of-leftcontent article:nth-child(5) {
-  background-color: #85b2f4;
 }
 
 /* hover button all*/
@@ -440,12 +424,13 @@ ul.menu {
   border-bottom: 1px solid #353a44;
 }
 
-.tag-bottom{
-    padding-top: 25px;
+.tag-bottom {
+  padding-top: 25px;
 }
 
-
-
+.tags {
+  display: inline;
+}
 
 /* handle background left-content */
 /* .left-content, */
@@ -477,7 +462,14 @@ ul.menu {
 }
 
 .button-content {
-  border-radius: 20px;
+  border-radius: 25px;
+  border: 1px solid rgb(39 39 39 / 75%);
+  padding: 6px 15px;
+  line-height: 1.2;
+  display: inline-block;
+  margin-right: 0;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 /* hanle background right-content */
@@ -639,22 +631,6 @@ h6 {
   margin-top: 50px;
 }
 
-.nameOfAuthors {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
-  border: 1px solid black;
-  border-radius: 20px;
-  z-index: 1;
-  position: relative;
-  top: -50px;
-  padding: 5px;
-  font-size: 15px;
-  font-family: sans-serif;
-  font-weight: bolder;
-}
-
 /* css Form */
 .subcribe-form {
   position: relative;
@@ -682,6 +658,12 @@ h6 {
   position: relative;
 }
 
+.form-group {
+  margin: 20px 0;
+  position: relative;
+}
+
+/* subcribe */
 .subscribe-decoration {
   background: url(../assets/img/subscribe-decoration.png) no-repeat left top;
   position: absolute;
@@ -698,7 +680,37 @@ h6 {
   font-size: 16px;
   position: relative;
   z-index: 2;
+  border-top: 1px solid black;
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 0;
   padding: 60px 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.title-subcribe {
+  margin-bottom: 10px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+/* css style of font word */
+.small {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+  margin-bottom: 5px;
+}
+
+.medium {
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.large {
+  font-size: 34px;
+  line-height: 1.2;
 }
 
 .inputForm {
@@ -779,6 +791,76 @@ h6 {
   text-align: center;
 }
 
+/* About the author */
+.author-avatar {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.bg-box.section {
+  padding: 40px;
+  padding-bottom: 30px;
+}
+
+.wrapper {
+  width: 50%;
+}
+
+.wrapper-right {
+  margin-right: auto;
+}
+
+.wrapper-text {
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.wrapper-info {
+  font-size: 14px;
+  margin-top: 15px;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.wrapper-button {
+  margin-top: 20px;
+  background-color: #fff;
+  border: 1px solid rgb(39 39 39 / 75%);
+  font-size: 12px;
+  padding: 5px 15px;
+  border-radius: 15px;
+  color: #000;
+  box-shadow: 2px 2px #443c3c;
+}
+
+#authors {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.authors-post {
+  width: 42.5%;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.authors-post-text {
+  font-weight: normal;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 /* page navigation */
 #page-info {
   margin-right: 20px;
@@ -838,6 +920,7 @@ h6 {
   overflow: visible;
   box-sizing: border-box;
   min-height: 1px;
+  height: 100%;
 }
 
 /* sticky position */
@@ -846,6 +929,7 @@ h6 {
   position: sticky;
   top: 0;
   align-self: flex-start;
+  overflow: auto;
 }
 
 .sticky-item {

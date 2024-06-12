@@ -6,7 +6,7 @@ body {
   letter-spacing: 0.3px;
   word-wrap: break-word;
   background-image: url(https://ghost.estudiopatagon.com/groovy/assets/images/background-decoration.svg),
-                    url(https://ghost.estudiopatagon.com/groovy/assets/images/background-decoration.svg);
+    url(https://ghost.estudiopatagon.com/groovy/assets/images/background-decoration.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: 9.5% 95px, 90.5% 95px;
   background-attachment: fixed, fixed;
@@ -27,7 +27,7 @@ footer {
 
 /* hover img all */
 button:hover,
-img:hover {
+img:hover:not(.img-menu) {
   box-shadow: 2px 2px #443c3c;
   transform: translate3d(-2px, -2px, 0);
   transition: transform 0.3s cubic-bezier(1, 0, 0, 1);
@@ -35,7 +35,7 @@ img:hover {
 }
 
 button:active,
-img:active {
+img:active:not(.img-menu) {
   box-shadow: 2px 2px #443c3c;
   transform: translate3d(-2px, -2px, 0);
 }
@@ -678,6 +678,7 @@ h6 {
   padding-right: 20px;
 }
 
+/* sticky position for sidebar */
 #sidebar {
   z-index: 2;
   float: right;
@@ -685,14 +686,15 @@ h6 {
   overflow: visible;
   box-sizing: border-box;
   min-height: 1px;
+  height: 100%;
 }
 
-/* sticky position */
 .stickyAside {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   align-self: flex-start;
+  overflow: auto;
 }
 
 .sticky-item {
