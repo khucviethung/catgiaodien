@@ -30,7 +30,7 @@ footer {
 }
 
 /* hover img all */
-button:hover,
+button:hover:not(.main-comment #btn),
 img:hover:not(.img-menu) {
   box-shadow: 2px 2px #443c3c;
   transform: translate3d(-2px, -2px, 0);
@@ -38,7 +38,7 @@ img:hover:not(.img-menu) {
   cursor: pointer;
 }
 
-button:active,
+button:active:not(.main-comment #btn),
 img:active:not(.img-menu) {
   box-shadow: 2px 2px #443c3c;
   transform: translate3d(-2px, -2px, 0);
@@ -795,11 +795,23 @@ h6 {
 .author-avatar {
   position: relative;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 20px;
   width: 80px;
   height: 80px;
   border-radius: 100%;
   overflow: hidden;
+  background-size: cover;
+}
+
+.title-authors {
+  position: absolute;
+  left: 40px;
+  top: -20px;
+  z-index:-2;
+  padding:4px 25px;
+  background: #fff;
+  border:1px solid rgb(39 39 39 / 75%);
+  border-radius: 100px;
 }
 
 .bg-box.section {
@@ -821,11 +833,13 @@ h6 {
   overflow: hidden;
 }
 
-.wrapper-info {
+.wrapper-info p {
   font-size: 14px;
   margin-top: 15px;
   max-width: 550px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
 }
 
 .wrapper-button {
@@ -859,6 +873,41 @@ h6 {
   font-weight: normal;
   margin-bottom: 20px;
   text-align: center;
+}
+
+/* comment */
+.comment-root {
+  padding-top: 0;
+  padding-bottom: 24px;
+}
+
+.main-comment {
+  border-top: 1px solid #00000013;
+  border-bottom: 1px solid #00000013;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+
+.btn-comment {
+  margin: 0 0 12px;
+  padding: 10px 20px;
+  background-color: rgb(255, 76, 96);
+  color: #fff;
+  font-weight: bolder;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-signin-comment {
+  color: rgb(255, 76, 96);
+  border: none;
+  background-color: #fffacd;
+  font-weight: 14px;
+  font-weight: 500;
 }
 
 /* page navigation */
@@ -932,7 +981,7 @@ h6 {
   overflow: auto;
 }
 
-.sticky-item {
+.sticky-item:not(:last-child) {
   position: relative;
   margin-bottom: 50px;
   width: auto;
