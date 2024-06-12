@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="./css/detailPage.css">
-<script src="../js/script.js"></script>
+<link rel="stylesheet" href="./css/detailsPage.css">
+<script src="./js/script.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <head>
@@ -63,149 +63,256 @@
                     <!-- left content -->
                     <div class="left-content grid-70">
                         <div id="articles-of-leftcontent">
-                             <article class="main-article bg-box "> 
-                                <div class="category-overlay"></div>
-                                <!-- header -->
-                                <header class="d-flex ">
-                                    <div class="imageDetails">
-                                        <img class="img-content" 
-                                        src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2022/09/light-bulb-creative-business-idea-symbol-held-by-hand_53876-127176.jpg" 
-                                        width="300" height="380"
-                                        >
-                                    </div>
-                                    <div class="info align-items-center">
-                                        <div class="top">
-                                            <div class="tag">
-                                                <a href="" ><i class="icon-left-1 fa-regular fa-circle-dot"></i> Travel</a>
-                                            </div>
-                                            <time datetime="2022-09-25">September 25, 2022</time>
-                                            <div class="min-read ms-4">
-                                                3 min read
-                                            </div>
-                                        </div>
-                                        <h1 class="main-tittle no-margin">
-                                            Building your audience with subscriber signups
-                                        </h1>
-                                        <div class="d-flex last-update ">
-                                            <strong> Last Update </strong> 
-                                            : October 21, 2022
-                                        </div>
-                                    </div>
-                                </header>
-                                <!-- post content -->
-                                 <section class="post-content">
-                                    <div class="text">
-                                        <p class="">
-                                            What sets Ghost apart from other products is that you can publish content and grow your audience 
-                                            using the same platform. Rather than just endlessly posting and hoping someone is listening, you 
-                                            can track real signups against your work and have them subscribe to be notified of future posts. 
-                                            The feature that makes all this possible is called Portal.
-                                        </p>
-                                        <p>
-                                            Portal is an embedded interface for your audience to sign up to your site. It works on every Ghost
-                                            site, with every theme, and for any type of publisher.
-                                        </p>
-                                        <p>
-                                            You can customize the design, content and settings of Portal to suit your site, whether you just
-                                            want people to sign up to your newsletter — or you're running a full premium publication with user
-                                            sign-ins and private content.
-                                        </p>
-                                        <figure class="image-card">
-                                            <img class="imgCaption justify-content-center" src="https://ghost.estudiopatagon.com/groovy/content/images/2022/09/bulb-sign-idea-symbol-word_53876-125397.jpg " 
-                                            alt="" width="100%">
-                                            <figcaption>Image Caption</figcaption>
-                                        </figure>
-                                        <p>
-                                            Once people sign up to your site, they'll receive an email confirmation with a link to click. The 
-                                            link acts as an automatic sign-in, so subscribers will be automatically signed-in to your site when
-                                            they click on it. There are a couple of interesting angles to this:
-                                        </p>
-                                        <p>
-                                            Because subscribers are automatically able to sign in and out of your site as registered members: You
-                                            can (optionally) restrict access to posts and pages depending on whether people are signed-in or not.
-                                            So if you want to publish some posts for free, but keep some really great stuff for members-only, this
-                                            can be a great draw to encourage people to sign up!
-                                        </p>
-                                        <p>
-                                            Ghost members sign in using email authentication links, so there are no passwords for people to set or 
-                                            forget. You can turn any list of email subscribers into a database of registered members who can sign in
-                                            to your site. Like magic.
-                                        </p>
-                                        <figure class="gallery-card">
-                                            <div class="d-flex gallery-container">
-                                                <div class="d-flex row justify-content-center align-items-center">
-                                                    <div class="col">
-                                                        <a href="">
-                                                            <img src="https://ghost.estudiopatagon.com/groovy/content/images/2022/09/1920-love-to-drink-coffee-to-increase-energy.jpg" 
-                                                            class="gallery-image-item"
-                                                            >
-                                                        </a>
-                                                    </div>
-                                                    <div class="col">
-                                                        <a href="">
-                                                            <img src="https://ghost.estudiopatagon.com/groovy/content/images/2022/09/minimal-school-bell_360032-1067.jpg" 
-                                                            class="gallery-image-item"
-                                                            >
-                                                        </a>
-                                                    </div>
-                                                    <div class="col">
-                                                        <a href="">
-                                                            <img src="https://ghost.estudiopatagon.com/groovy/content/images/size/w600/2022/09/robot-hand-holding-light-bulb-ice-cream_53876-146268.jpg" 
-                                                            class="gallery-image-item"
-                                                            >
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <figcaption>Gallery card</figcaption>
-                                        </figure>
-                                        <p>
-                                            Portal makes all of this possible, and it appears by default as a floating button in the bottom-right corner
-                                            of your site. When people are logged out, clicking it will open a sign-up/sign-in window. When members are 
-                                            logged in, clicking the Portal button will open the account menu where they can edit their name, email, and
-                                            subscription settings.
-                                        </p>
-                                        <p>
-                                            The floating Portal button is completely optional. If you prefer, you can add manual links to your content,
-                                            navigation, or theme to trigger it instead.
-                                        </p>
-                                        <p>
-                                            Like this! 
-                                            <a href="">Sign up here</a>
-                                        </p>
-                                        <hr>
-                                        <p>
-                                            As you start to grow your registered audience, you'll be able to get a sense of who you're publishing for and
-                                            where those people are coming from. Best of all: You'll have a straightforward, reliable way to connect with
-                                            people who enjoy your work.
-                                        </p>
-                                        <p>
-                                            Social networks go in and out of fashion all the time. Email addresses are timeless.
-                                        </p>
-                                        <p>
-                                            Growing your audience is valuable no matter what type of site you run, but if your content is your business, 
-                                            then you might also be interested in <a href="">setting up premium subscriptions.</a> 
-                                        </p>
-                                    </div>
-                                    <!-- tag bottom -->
-                                    <div class="tag-bottom text-center">
-                                        <p class="">Tagged in</p>
-                                        <div class="tags">
-                                            <button class="button-content ps-2 pe-2  bg-light">
-                                                <i class="icon-left-1 fa-regular fa-circle-dot"></i>
+                            <!-- articles -->
+                            <article class="main-article bg-box "> 
+                            <div class="category-overlay"></div>
+                            <!-- header -->
+                            <header class="d-flex">
+                                <div class="imageDetails">
+                                    <img class="img-content" 
+                                    src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2022/09/light-bulb-creative-business-idea-symbol-held-by-hand_53876-127176.jpg" 
+                                    width="300" height="380"
+                                    >
+                                </div>
+                                <div class="info align-items-center">
+                                    <div class="top">
+                                        <div class="tag">
+                                            <button class="button-content bg-light">
+                                                <i class="icon-left-1 fa-regular fa-circle-dot"></i><a href=""></a>
                                                 Travel 
                                             </button>
-                                            <button class="button-content ps-2 pe-2 bg-light">
-                                                <i class="icon-left-3 fa-regular fa-circle-dot"></i>
-                                                Health 
-                                            </button>
+                                        </div>
+                                        <time datetime="2022-09-25">September 25, 2022</time>
+                                        <div class="min-read ms-4">
+                                            3 min read
                                         </div>
                                     </div>
-                                    <!-- end of tag bottom -->
-                                 </section>
-                             </article>
+                                    <h1 class="main-tittle no-margin">
+                                        Building your audience with subscriber signups
+                                    </h1>
+                                    <div class="d-flex last-update ">
+                                        <strong> Last Update </strong> 
+                                        : October 21, 2022
+                                    </div>
+                                </div>
+                            </header>
+                            <!-- post content -->
+                                <section class="post-content">
+                                <!-- text -->
+                                <div class="text">
+                                    <p class="">
+                                        What sets Ghost apart from other products is that you can publish content and grow your audience 
+                                        using the same platform. Rather than just endlessly posting and hoping someone is listening, you 
+                                        can track real signups against your work and have them subscribe to be notified of future posts. 
+                                        The feature that makes all this possible is called Portal.
+                                    </p>
+                                    <p>
+                                        Portal is an embedded interface for your audience to sign up to your site. It works on every Ghost
+                                        site, with every theme, and for any type of publisher.
+                                    </p>
+                                    <p>
+                                        You can customize the design, content and settings of Portal to suit your site, whether you just
+                                        want people to sign up to your newsletter — or you're running a full premium publication with user
+                                        sign-ins and private content.
+                                    </p>
+                                    <figure class="image-card">
+                                        <img class="imgCaption justify-content-center" src="https://ghost.estudiopatagon.com/groovy/content/images/2022/09/bulb-sign-idea-symbol-word_53876-125397.jpg " 
+                                        alt="" width="100%">
+                                        <figcaption>Image Caption</figcaption>
+                                    </figure>
+                                    <p>
+                                        Once people sign up to your site, they'll receive an email confirmation with a link to click. The 
+                                        link acts as an automatic sign-in, so subscribers will be automatically signed-in to your site when
+                                        they click on it. There are a couple of interesting angles to this:
+                                    </p>
+                                    <p>
+                                        Because subscribers are automatically able to sign in and out of your site as registered members: You
+                                        can (optionally) restrict access to posts and pages depending on whether people are signed-in or not.
+                                        So if you want to publish some posts for free, but keep some really great stuff for members-only, this
+                                        can be a great draw to encourage people to sign up!
+                                    </p>
+                                    <p>
+                                        Ghost members sign in using email authentication links, so there are no passwords for people to set or 
+                                        forget. You can turn any list of email subscribers into a database of registered members who can sign in
+                                        to your site. Like magic.
+                                    </p>
+                                    <figure class="gallery-card">
+                                        <div class="d-flex gallery-container">
+                                            <div class="d-flex row justify-content-center align-items-center">
+                                                <div class="col">
+                                                    <a href="">
+                                                        <img src="https://ghost.estudiopatagon.com/groovy/content/images/2022/09/1920-love-to-drink-coffee-to-increase-energy.jpg" 
+                                                        class="gallery-image-item"
+                                                        >
+                                                    </a>
+                                                </div>
+                                                <div class="col">
+                                                    <a href="">
+                                                        <img src="https://ghost.estudiopatagon.com/groovy/content/images/2022/09/minimal-school-bell_360032-1067.jpg" 
+                                                        class="gallery-image-item"
+                                                        >
+                                                    </a>
+                                                </div>
+                                                <div class="col">
+                                                    <a href="">
+                                                        <img src="https://ghost.estudiopatagon.com/groovy/content/images/size/w600/2022/09/robot-hand-holding-light-bulb-ice-cream_53876-146268.jpg" 
+                                                        class="gallery-image-item"
+                                                        >
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <figcaption>Gallery card</figcaption>
+                                    </figure>
+                                    <p>
+                                        Portal makes all of this possible, and it appears by default as a floating button in the bottom-right corner
+                                        of your site. When people are logged out, clicking it will open a sign-up/sign-in window. When members are 
+                                        logged in, clicking the Portal button will open the account menu where they can edit their name, email, and
+                                        subscription settings.
+                                    </p>
+                                    <p>
+                                        The floating Portal button is completely optional. If you prefer, you can add manual links to your content,
+                                        navigation, or theme to trigger it instead.
+                                    </p>
+                                    <p>
+                                        Like this! 
+                                        <a href="">Sign up here</a>
+                                    </p>
+                                    <hr>
+                                    <p>
+                                        As you start to grow your registered audience, you'll be able to get a sense of who you're publishing for and
+                                        where those people are coming from. Best of all: You'll have a straightforward, reliable way to connect with
+                                        people who enjoy your work.
+                                    </p>
+                                    <p>
+                                        Social networks go in and out of fashion all the time. Email addresses are timeless.
+                                    </p>
+                                    <p>
+                                        Growing your audience is valuable no matter what type of site you run, but if your content is your business, 
+                                        then you might also be interested in <a href="">setting up premium subscriptions.</a> 
+                                    </p>
+                                </div>
+                                <!-- tag bottom -->
+                                <div class="tag-bottom text-center d-flex justify-content-center align-items-center">
+                                    <p class="small">Tagged in: </p>
+                                    <div class="tags">
+                                        <button class="button-content ps-2 pe-2  bg-light">
+                                            <i class="icon-left-1 fa-regular fa-circle-dot"></i>
+                                            Travel 
+                                        </button>
+                                        <button class="button-content ps-2 pe-2 bg-light">
+                                            <i class="icon-left-3 fa-regular fa-circle-dot"></i>
+                                            Health 
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- subcribe -->
+                                    <div class="subcribe">
+                                    <div class="grid-container text-center">
+                                        <form action="" class="subscribe-form">
+                                            <h3 class="title-subcribe medium">Like what you read?</h3>
+                                            <h4 class="title-subcribe large">Subscribe to our Newsletter</h4>
+                                            <div class="form-group">
+                                                <input type="email" name="email" class="inputForm mx-auto" placeholder="Enter your email address" required>
+                                                <button class="submitButton" type="submit" data-title="Submit">
+                                                    Submit
+                                                </button>
+                                            </div>
+                                        </form>
+                                        <p class="description">Subscribe to our email newsletter and unlock access
+                                            to <b>members-only</b> content and <b>exclusive updates.</b></p>
+                                    </div>
+                                </div>
+                                </section>
+                                <!-- end of post-content -->
+                            </article>
+                            <!-- end of articles -->
+
+                            <!-- section about the authors -->
+                            <section id="authors" class="author section d-flex bg-box">
+                                <!-- <h3 class="medium">About the Author</h3> -->
+                                <!-- left content wrapper -->
+                                <div class="wrapper">
+                                    <!-- start flexbox left -->
+                                    <div class="d-flex">
+                                        <a class="author-avatar" href="">
+                                            <span>
+                                                <img class="about-jonathanImg" src="./assets/img/JonathanDoe.jpg.webp" alt="" width="100%">
+                                            </span>
+                                        </a>
+                                        <!-- right of flex left -->
+                                        <div class="wrapper-right justify-content-center align-items-center text-center">
+                                            <h4 class="wrapper-text hoverTextEffect medium" style="font-weight: 800; font-size: 22px; letter-spacing: 0.5px; line-height: 1.45;">Jonathan Doe</h4>
+                                            <p>Chile</p>
+                                            <div class="icon">
+                                                <span class="iconAboutMe">
+                                                    <a href=""><i class="fa-brands fa-twitter ms-2 me-3"></i></a>
+                                                    <a href=""><i class="fa-brands fa-facebook-f me-3"></i></a>
+                                                    <a href=""><i class="fa-solid fa-earth-americas me-3"></i></a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <!-- end of right flex left  -->
+                                    </div>
+                                    <!-- end of d-flex -->
+                                    <!-- info of left -->
+                                    <div class="wrapper-info text-center align-items-center justify-content-center">
+                                        <p>
+                                            Hello! My name is Jonathan Doe working from Chile. I create some Ghost and Wordpress 
+                                            themes for differents markets, also, i offer live support via our ticket system.
+                                        </p>
+                                        <button class="wrapper-button"><a href="" style="text-decoration: none;color:#333;font-weight: 700;" >View All Articles</a></button>
+                                    </div>
+                                    <!-- end of info left -->
+                                </div>
+                                <!-- end of left content wrapper -->
+                                <!-- right content authors-->
+                                <div class="authors-post">
+                                <h4 class="authors-post-text small text-center">Check latest articles from <b>this author:</b></h4>
+                                <div class="d-flex fw-bolder">
+                                    <img class="img-content mb-4 me-3" src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2022/09/light-bulb-creative-business-idea-symbol-held-by-hand_53876-127176.jpg"
+                                    width="20%"
+                                    alt="">
+                                    <span class="number">1</span>
+                                    <div>
+                                        <span class="">Building your audience with subscriber signups</span>
+                                        <h6 class="mt-2 fw-lighter ">Sep 25, 2022</h6>
+                                    </div> 
+                                </div>
+                                <div class="d-flex fw-bolder">
+                                    <img class="img-content mb-4 me-3 " src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2022/08/layered-number-one-stylized-typography_53876-96387.webp"
+                                    width="20%"
+                                    alt="">
+                                    <span class="number">2</span>
+                                    <div>
+                                        <span class="">Selling memberships with recurring revenue</span>
+                                        <h6 class="mt-2 fw-lighter">Mar 16, 2021</h6>
+                                    </div> 
+                                </div>
+                                <div class=" d-flex fw-bolder">
+                                    <img class="img-content mb-4 me-3 " src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2022/09/various-types-pumpkins-arranged-height-food-gravity-concept-autumn-halloween-theme_492182-203-1.jpg"
+                                    width="20%"
+                                    alt="">
+                                    <span class="number">3</span>
+                                    <div>
+                                        <span class="">The spectacle before us was indeed sublime</span>
+                                        <h6 class="mt-2 fw-lighter">Apr 26, 2019</h6>
+                                    </div> 
+                                </div>
+                                </div>
+                                <!-- end of right content authors -->
+                            <!-- end of section about the authors -->
+                            </section>
+
+                            <!-- comments -->
+                             <div class="bg-box section">
+                                <div class="comment-root">
+                                        comment content
+                                </div>
+                             </div>
                         </div>
                     </div>
+
                     <!-- aside right content -->
                     <aside id="sidebar" class="grid-30" style="position: relative; overflow: visible; box-sizing: border-box; min-height: 2180.4px;">
                         <div class="stickyAside">
@@ -309,101 +416,11 @@
                     <!-- end of aside content -->
                 </section>
             
-                <!-- Authors -->
-                <!-- navigation prev next -->
-                <article class="authors grid-container">
-                        <h3 class="meetTheAuthor title bordered ms-5 justify-content-center align-items-center">Meet the Authors</h3>
-                        <div class="navigation-container me-5">
-                            <button id="prev-btn" class="nav-btn me-3"><i class="fa-solid fa-arrow-left fs-1"></i></button>
-                            <button id="next-btn" class="nav-btn"><i class="fa-solid fa-arrow-right fs-1"></i></button>
-                        </div> 
-                        <div class="carousel mt-4">
-                            <div class="slick-list">
-                                <div id="carouselInterval" class="carousel slide container-fluid my-auto" data-bs-ride="carousel">
-                                    <div class="carousel-inner p-3">     
-                                        <section class="carousel-item active">
-                                            <div class="itemCarousel row">
-                                                <article class="col">
-                                                    <a href="#">
-                                                        <img src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2023/11/young-happy-smiling-african-american-guy-yellow-hoodie-heard-very-funny-joke-laughed_295783-2454--1-.webp" 
-                                                        class= "imgAuthors d-block w-100 h-100" alt="Slide 1" title="Acticle: 5">
-                                                    </a>
-                                                    <h4 class="nameOfAuthors w-75 mx-auto">Jonathan Doe</h4>
-                                                </article>
-                                                <article class="col">
-                                                    <a href="#">
-                                                        <img src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2022/09/malheureuse-jeune-femme-afro-americaine-regarde-ses-ongles-veut-faire-nouvelle-manucure-vetue-vetements-elegants_273609-46283.jpg" 
-                                                        class="imgAuthors d-block w-100 h-100" alt="Slide 2" title="Acticle: 3">
-                                                    </a>
-                                                    <h4 class="nameOfAuthors w-75 mx-auto">Mary Buzard</h4>
-                                                </article>
-                                                <article class="col">
-                                                    <a href="#">
-                                                        <img src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2022/09/studio-portrait-young-african-american-man-posing-studio-background-looking-into-camera-with-shocked-facial-expression_295783-16901.jpg" 
-                                                        class= "imgAuthors d-block w-100 h-100" alt="Slide 3" title="Acticle: 3">
-                                                    </a>
-                                                    <h4 class="nameOfAuthors w-75 mx-auto">James Brawson</h4>
-                                                </article>
-                                                <article class="col">
-                                                    <a href="#">
-                                                        <img src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2023/11/bel-homme-europeen-joyeux-sourit-agreablement-garde-mains-ecouteurs-stereo-sans-fil-expression-visage-optimiste-aime-ecouter-musique-pendant-poses-temps-libre-interieur-concept-passe-temps_273609-56815--1-.webp" 
-                                                        class= "imgAuthors d-block w-100 h-100" alt="Slide 4" title="Acticle: 2">
-                                                    </a>
-                                                    <h4 class="nameOfAuthors w-75 mx-auto">Joseph Fracis</h4>
-                                                </article>
-                                                <article class="col">
-                                                    <a href="#">
-                                                        <img src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2022/09/smiling-girl-holding-flowerpoint-glass-water-purple-background-high-quality-photo_144627-75115.webp" 
-                                                        class= "imgAuthors d-block w-100 h-100" alt="Slide 5" title="Acticle: 1">
-                                                    </a>
-                                                    <h4 class="nameOfAuthors w-75 mx-auto">Brenda Hitchell</h4>
-                                                </article>
-                                            </div>
-                                        </section>
-                                        <section class="carousel-item ">
-                                            <div class="itemCarousel row">
-                                                <article class="col">
-                                                    <a href="#">
-                                                        <img src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2022/09/horizontal-shot-upbeat-dark-haired-woman-uses-headphones-moves-body-enjoys-new-playlist-cheerful-expression-likes-tune-wears-yellow-jacket-smiles-broadly-has-fun_273609-54580-2.jpg" 
-                                                        class= "imgAuthors d-block w-100 h-100" alt="Slide 6" title="Acticle: 1">
-                                                    </a>
-                                                    <h4 class="nameOfAuthors w-75 mx-auto">Emily Allen</h4>
-                                                </article>
-                                                <article class="col">
-                                                    <a href="#">
-                                                    <img src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2023/11/young-happy-smiling-african-american-guy-yellow-hoodie-heard-very-funny-joke-laughed_295783-2454--1-.webp" 
-                                                        class= "imgAuthors d-block w-100 h-100" alt="Slide 7" title="Acticle: 5">
-                                                    </a>
-                                                    <h4 class="nameOfAuthors w-75 mx-auto">Jonathan Doe</h4>
-                                                </article>
-                                                <article class="col">
-                                                    <a href="#">
-                                                        <img src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2022/09/malheureuse-jeune-femme-afro-americaine-regarde-ses-ongles-veut-faire-nouvelle-manucure-vetue-vetements-elegants_273609-46283.jpg" 
-                                                        class= "imgAuthors d-block w-100 h-100" alt="Slide 8" title="Acticle: 3">
-                                                    </a>
-                                                    <h4 class="nameOfAuthors w-75 mx-auto">Mary Buzard</h4>
-                                                </article>
-                                                <article class="col">
-                                                    <a href="#">
-                                                        <img src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2022/09/studio-portrait-young-african-american-man-posing-studio-background-looking-into-camera-with-shocked-facial-expression_295783-16901.jpg" 
-                                                        class= "imgAuthors d-block w-100 h-100" alt="Slide 9" title="Acticle: 3">
-                                                    </a>
-                                                    <h4 class="nameOfAuthors w-75 mx-auto">James Brawson</h4>
-                                                </article>
-                                                <article class="col">
-                                                    <a href="#">
-                                                        <img src="https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2023/11/bel-homme-europeen-joyeux-sourit-agreablement-garde-mains-ecouteurs-stereo-sans-fil-expression-visage-optimiste-aime-ecouter-musique-pendant-poses-temps-libre-interieur-concept-passe-temps_273609-56815--1-.webp" 
-                                                        class= "imgAuthors d-block w-100 h-100" alt="Slide 10" title="Acticle: 2">
-                                                    </a>
-                                                    <h4 class="nameOfAuthors w-75 mx-auto">Joseph Fracis</h4>
-                                                </article>
-                                            </div>
-                                        </section>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-                </article> 
+                <section class="sibling">
+                    <article class="section bg-box" style="width: 47.5%;">
+                        previous articles
+                    </article>
+                </section>
             </div>           
         </main>  
         <!-- end of main content -->
