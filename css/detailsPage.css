@@ -325,6 +325,12 @@ ul.menu {
   color: #333;
 }
 
+.meta-sibling{
+  font-size: 12px;
+  font-family: sans-serif;
+  opacity: 0.75;
+}
+
 .min-read {
   display: inline-block;
   cursor: default;
@@ -429,7 +435,10 @@ ul.menu {
 }
 
 .tags {
-  display: inline;
+  display: block;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 0.5px;
 }
 
 /* handle background left-content */
@@ -468,8 +477,10 @@ ul.menu {
   line-height: 1.2;
   display: inline-block;
   margin-right: 0;
-  margin-left: 10px;
   margin-bottom: 10px;
+  background: #ffffff;
+  font-size: 13px;
+  font-family: sans-serif;
 }
 
 /* hanle background right-content */
@@ -807,10 +818,10 @@ h6 {
   position: absolute;
   left: 40px;
   top: -20px;
-  z-index:-2;
-  padding:4px 25px;
+  z-index: -2;
+  padding: 4px 25px;
   background: #fff;
-  border:1px solid rgb(39 39 39 / 75%);
+  border: 1px solid rgb(39 39 39 / 75%);
   border-radius: 100px;
 }
 
@@ -908,6 +919,51 @@ h6 {
   background-color: #fffacd;
   font-weight: 14px;
   font-weight: 500;
+}
+
+/*css previous article  */
+.sibling .thumb {
+  float: none;
+  min-width: 200px;
+  height: 270px;
+  position: relative;
+  min-height: inherit;
+  margin-right: 20px;
+  font-size: 35px;
+  border-radius: 8px;
+  border: 1px solid black;
+  z-index: 1;
+}
+
+.img-sibling {
+  background-image: url("https://ghost.estudiopatagon.com/groovy/content/images/size/w450h550/2022/08/layered-number-one-stylized-typography_53876-96387.webp");
+  border: 0;
+  border-radius: 8px;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100% !important;
+  z-index: 1;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center center !important;
+}
+
+.title-sibling {
+  display: block;
+  font-size: 24px;
+  padding: 15px 0;
+  line-height: 1.3;
+  margin: 0 !important;
+  font-family: sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.min-read{
+  margin-left: 12px;
+  display: inline-block;
+  text-transform: lowercase;
 }
 
 /* page navigation */

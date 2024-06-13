@@ -324,7 +324,14 @@ ul.menu {
 }
 
 .button-content {
-  border-radius: 20px;
+  border-radius: 25px;
+  border: 1px solid rgb(39 39 39 / 75%);
+  padding: 6px 15px;
+  line-height: 1.2;
+  display: inline-block;
+  margin-right: 0;
+  margin-bottom: 10px;
+  background: #ffffff;
 }
 
 /* hanle background right-content */
@@ -679,6 +686,20 @@ h6 {
 }
 
 /* sticky position for sidebar */
+/* .titleRight {
+  position: absolute;
+  left: 25px;
+  top: -20px;
+  z-index: 2;
+  padding: 4px 25px;
+  background: #fff;
+  border: 1px solid rgb(39 39 39 / 75%);
+  border-radius: 100px;
+  letter-spacing: 0.25px;
+  font-weight: 800;
+  font-size: 20px;
+} */
+
 #sidebar {
   z-index: 2;
   float: right;
@@ -693,8 +714,6 @@ h6 {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  align-self: flex-start;
-  overflow: auto;
 }
 
 .sticky-item:not(:last-child) {
@@ -702,14 +721,6 @@ h6 {
   margin-bottom: 50px;
   width: auto;
   float: none;
-}
-
-.tittleRight {
-  letter-spacing: 0.25px;
-  position: absolute;
-  left: 25px;
-  top: -20px;
-  z-index: 2;
 }
 
 /* number footer */
