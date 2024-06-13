@@ -59,6 +59,7 @@
         <!-- main content  -->
         <main id="contentHomepage" class="grid-container" style="transform: none;">
             <div class="row parentContent">
+                <!-- Start Full Main Content -->
                 <section class="content mt-5 mb-5">
                     <!-- left content -->
                     <div class="left-content grid-70">
@@ -230,18 +231,18 @@
 
                             <!-- section about the authors -->
                             <section id="authors" class="author section d-flex bg-box">
-                                <!-- <h3 class="medium">About the Author</h3> -->
+                                <h3 class=" title-authors medium">About the Author</h3>
                                 <!-- left content wrapper -->
                                 <div class="wrapper">
                                     <!-- start flexbox left -->
                                     <div class="d-flex">
                                         <a class="author-avatar" href="">
                                             <span>
-                                                <img class="about-jonathanImg" src="./assets/img/JonathanDoe.jpg.webp" alt="" width="100%">
+                                                <img class="about-jonathanImg" src="./assets/img/JonathanDoe.jpg.webp" alt="">
                                             </span>
                                         </a>
                                         <!-- right of flex left -->
-                                        <div class="wrapper-right justify-content-center align-items-center text-center">
+                                        <div class="wrapper-right">
                                             <h4 class="wrapper-text hoverTextEffect medium" style="font-weight: 800; font-size: 22px; letter-spacing: 0.5px; line-height: 1.45;">Jonathan Doe</h4>
                                             <p>Chile</p>
                                             <div class="icon">
@@ -256,7 +257,7 @@
                                     </div>
                                     <!-- end of d-flex -->
                                     <!-- info of left -->
-                                    <div class="wrapper-info text-center align-items-center justify-content-center">
+                                    <div class="wrapper-info">
                                         <p>
                                             Hello! My name is Jonathan Doe working from Chile. I create some Ghost and Wordpress 
                                             themes for differents markets, also, i offer live support via our ticket system.
@@ -307,11 +308,32 @@
                             <!-- comments -->
                              <div class="bg-box section">
                                 <div class="comment-root">
-                                        comment content
+                                    <!-- first line comments  -->
+                                    <div class="d-flex justify-content-between mb-4">
+                                        <h2></h2>
+                                        <span class="text-comment" style="color: #00000080;font-size: 16px;">0 comments</span>
+                                    </div>
+                                    <!-- end of first line comments -->
+                                     <!-- main comment -->
+                                    <div>
+                                        <section class="d-flex main-comment">
+                                            <h1 class="text-center" style="font-size: 24px;font-weight:600;">Start the conversation</h1>
+                                            <p style="margin-bottom: 28px;">Become a member of <span style="font-weight:500;">Groovy</span> to start commenting.</p>
+                                            <button id="btn" class="btn-comment" style="opacity: 90;"> Sign up now </button>
+                                            <p>
+                                                <span style="color:#0006">Already a member?</span> 
+                                                <button id="btn" class="btn-signin-comment">Sign in</button>
+                                            </p>
+                                        </section>
+                                    </div>
+                                    <!-- end of main comment -->
                                 </div>
                              </div>
+                             <!-- end of comments -->
                         </div>
+                        <!-- end of articles left content -->
                     </div>
+                    <!-- end of left content -->
 
                     <!-- aside right content -->
                     <aside id="sidebar" class="grid-30" style="position: relative; overflow: visible; box-sizing: border-box; min-height: 2180.4px;">
@@ -415,11 +437,35 @@
                     </aside>
                     <!-- end of aside content -->
                 </section>
+                <!-- end of Full Main Content  -->
             
+                <!-- previous articles -->
                 <section class="sibling">
-                    <article class="section bg-box" style="width: 47.5%;">
-                        previous articles
+                    <article class="section bg-box d-flex align-items-center" style="width: 47.5%;">
+                        <a href="" class="thumb">
+                            <span class="img-sibling"></span>
+                        </a>
+                        <!-- info-sibling -->
+                        <div class="info-sibling">
+                            <div class="tags">
+                                <button class="button-content">
+                                    <i class="icon-left-2 fa-regular fa-circle-dot"></i>
+                                    Getting Started 
+                                </button>
+                            </div>
+                            <h4 class="title-sibling">
+                                Far far away, behind the word mountains
+                            </h4>
+                            <div class="meta-sibling">
+                                <time datetime="2021-03-16">Mar 16, 2021</time>
+                                <div class="min-read">
+                                    3 min read
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of info-sibling -->
                     </article>
+                <!-- end of previous articles -->
                 </section>
             </div>           
         </main>  
