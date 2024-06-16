@@ -61,36 +61,100 @@
         <main id="page" class="grid-container" style="transform: none;">
             <!-- start center -->
             <div class="membership-page content">
-                <div class="content">
-                    <div class="left-content" style="padding-right: 0;">
-                        <article class="post">
-                            <section class="post-content">
-                                <!-- switch button -->
-                                <div class="switch">
-                                    <input type="radio" id="monthly" name="toggle" checked>
-                                    <label for="monthly" class="switch-label">Monthly</label>
-                                    <input type="radio" id="yearly" name="toggle">
-                                    <label for="yearly" class="switch-label">Yearly</label>
-                                    <div class="switch-selection"></div>
+                <article class="content">
+                    <section class="post-content">
+                        <!-- switch button -->
+                        <div class="toggle-container text-center">
+                            <button id="monthly-btn" class="toggle-btn active">Monthly</button>
+                            <button id="yearly-btn" class="toggle-btn">Yearly</button>
+                        </div>
+                        <!-- start -->
+                        <div class="pricing-container">
+                            <!-- monthly -->
+                            <section id="monthly" class="pricing active">   
+                                <div class="plan grid-33">       <!-- free -->          
+                                    <h3 class="large" style="font-weight: bold;">Free</h3>
+                                    <p class="price">$0</p>
+                                    <strong>Access to all free articles</strong>
+                                    <ul>
+                                        <li>Access to limited Articles</li>
+                                        <li>Articles with Advertising</li>
+                                        <li>No card required</li>
+                                    </ul>
+                                    <a href="" class="sign-up-btn">Sign Up for Free</a>
                                 </div>
-                                <!-- end -->
+                                <div class="plan grid-33">     <!-- premium -->
+                                    <h3 class="large" style="font-weight: bold;">Premium</h3>
+                                    <p class="price">$5 <span>/Month</span></p>
+                                    <strong>Full Access to Premium Content</strong>
+                                    <ul>
+                                        <li>Access to premium posts</li>
+                                        <li>Weekly newsletters</li>
+                                        <li>Simple, secure card payment</li>
+                                        <li>No Advertising</li>
+                                    </ul>
+                                    <a href="" class="sign-up-btn sign-up-now">Sign Up Now</a>
+                                </div>
+                                <div class="plan grid-33">     <!-- golden -->
+                                    <h3 class="large" style="font-weight: bold;">Golden+✨</h3>
+                                    <p class="price">$7 <span>/Month</span></p>
+                                    <strong>Access to all premium content and special offers</strong>
+                                    <ul>
+                                        <li>Access to premium posts</li>
+                                        <li>Weekly newsletters</li>
+                                        <li>No Advertising</li>
+                                        <li>Special discounts</li>
+                                    </ul>
+                                    <a href="" class="sign-up-btn sign-up-now">Sign Up Now</a>
+                                </div>
                             </section>
-                            <!-- content -->
-                            <div class="d-flex content text-center" >
-                                <div class="content-item bg-box" id="monthly-content">Monthly Content</div>
-                                <div class="content-item bg-box" id="monthly-content">Monthly Content</div>
-                                <div class="content-item bg-box" id="monthly-content">Monthly Content</div>
-                            </div>
-                            <div class="d-flex content text-center" >
-                                <div class="content-item bg-box" id="yearly-content" >yearly content</div>
-                                <div class="content-item bg-box" id="yearly-content">yearly content</div>
-                                <div class="content-item bg-box" id="yearly-content">yearly content</div>
-                            </div> 
-                        </article>
-                    </div>
-                </div>
+
+                            <!-- yearly -->
+                            <section id="yearly" class="pricing">
+                                <div class="plan grid-33">       <!-- free -->          
+                                    <h3 class="large" style="font-weight: bold;">Free</h3>
+                                    <p class="price">$0</p>
+                                    <strong>Access to all free articles</strong>
+                                    <ul>
+                                        <li>Access to limited Articles</li>
+                                        <li>Articles with Advertising</li>
+                                        <li>No card required</li>
+                                    </ul>
+                                    <a href="" class="sign-up-btn">Sign Up for Free</a>
+                                </div>
+                                <div class="plan grid-33">     <!-- premium -->
+                                    <h3 class="large" style="font-weight: bold;">Premium</h3>
+                                    <p class="price">$50 <span>/Year</span></p>
+                                    <strong>Full Access to Premium Content</strong>
+                                    <ul>
+                                        <li>Access to premium posts</li>
+                                        <li>Weekly newsletters</li>
+                                        <li>Simple, secure card payment</li>
+                                        <li>No Advertising</li>
+                                    </ul>
+                                    <a href="" class="sign-up-btn sign-up-now">Sign Up Now</a>
+                                </div>
+                                <div class="plan grid-33">     <!-- golden -->
+                                    <h3 class="large" style="font-weight: bold;">Golden+✨</h3>
+                                    <p class="price">$70 <span>/Year</span></p>
+                                    <strong>Access to all premium content and special offers</strong>
+                                    <ul>
+                                        <li>Access to premium posts</li>
+                                        <li>Weekly newsletters</li>
+                                        <li>No Advertising</li>
+                                        <li>Special discounts</li>
+                                    </ul>
+                                    <a href="" class="sign-up-btn sign-up-now">Sign Up Now</a>
+                                </div>
+                            </section>
+                        </div>
+                        <!-- end -->
+                    </section>
+                    <!-- end of post-content -->
+                </article>
+                <!-- end of content -->
             </div>
-            <!-- end center -->
+            <!-- end full -->
         </main>  
         <!-- end of main content -->
 
