@@ -70,7 +70,7 @@ img:active:not(.img-menu) {
   align-items: center;
   width: 100%;
   box-sizing: border-box;
-  background-color: #fffacd;
+  background-color: #fff;
   position: relative;
   border: 1px solid rgb(39 39 39 / 75%);
   flex-wrap: nowrap;
@@ -786,11 +786,10 @@ h6 {
   margin-top: 50px;
 }
 
-.post-content{
+.post-content {
   margin-left: -20px;
   margin-right: -20px;
 }
-
 
 /* switch */
 .toggle-container {
@@ -920,7 +919,6 @@ h6 {
   border-radius: 50%;
 }
 
-
 .sign-up-btn {
   display: inline-block;
   background-color: #ff4c60;
@@ -938,7 +936,8 @@ h6 {
   text-decoration: none;
 }
 
-.sign-up-btn:hover {
+.sign-up-btn:hover,
+.sign-in-btn:hover {
   background-color: #ff4b4b;
   transform: translate(-2px, -2px);
   box-shadow: 2px 2px 0px 0px #333;
@@ -966,6 +965,27 @@ h6 {
   background-color: #fff;
   color: #000;
 }
+
+.sign-in-btn {
+  margin-left: 10px;
+  display: inline-block;
+  color: #fff;
+  font-size: 15px;
+  padding: 5px 25px;
+  letter-spacing: 0.5px;
+  position: relative;
+  z-index: 2;
+  font-family: sans-serif;
+  border-radius: 25px;
+  border: 1px solid rgb(39 39 39 / 75%);
+  background-color: #ff4c60;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 2px 2px #443c3c;
+}
+
+
+
 
 /* reponsive */
 /* Responsive layout - makes a one column layout instead of a two-column layout */

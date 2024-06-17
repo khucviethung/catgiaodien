@@ -70,7 +70,7 @@ img:active:not(.img-menu, .imgCaption) {
   align-items: center;
   width: 100%;
   box-sizing: border-box;
-  background-color: #fffacd;
+  background-color: #fff;
   position: relative;
   border: 1px solid rgb(39 39 39 / 75%);
   flex-wrap: nowrap;
@@ -229,8 +229,31 @@ ul.menu {
   z-index: 2;
 }
 
-#articles-of-leftcontent article {
+/* css category-overplay  */
+.category-overplay {
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 15px;
+}
+
+.category-overplay::before {
   background-color: #c5c5fe;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: -2px;
+  bottom: -2px;
+  opacity: 0.25;
+  border-radius: 15px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 
 /* hover button all*/
