@@ -259,7 +259,8 @@ ul.menu {
 }
 
 #articles-of-leftcontent article:nth-child(2) .category-overplay::before,
-#articles-of-leftcontent article:nth-child(6) .category-overplay::before {
+#articles-of-leftcontent article:nth-child(6) .category-overplay::before,
+.tag-description .category-overplay::before {
   background-color: #1dd7c2;
   content: "";
   position: absolute;
@@ -1024,6 +1025,10 @@ h6 {
   padding-right: 20px;
 }
 
+.grid-medium {
+  max-width: 990px;
+}
+
 .grid-small {
   max-width: 600px;
   margin-left: auto;
@@ -1096,6 +1101,84 @@ h6 {
     no-repeat center center;
 }
 
+/* start css tag content here */
+.tag-description {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: center;
+  min-height: 150px;
+  margin: 0 auto 50px auto;
+  /* padding-left: 50px;
+    padding-right: 50px; */
+  position: relative;
+  z-index: 1;
+  padding: 60px;
+  padding-bottom: 50px;
+}
+.overplay:before {
+  background-color: #1dd7c2;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: -2px;
+  bottom: -2px;
+  opacity: 0.25;
+}
+
+.tag-description .left {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  width: auto;
+}
+
+.dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: var(--main-color);
+  vertical-align: middle;
+  border-radius: 100%;
+  margin: -2px 5px 0;
+}
+
+.titleTag {
+  background: #fff;
+  border: 1px solid rgb(39 39 39 / 75%);
+  padding: 4px 30px;
+  border-radius: 100px;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px;
+  color: #333;
+}
+
+.titleTag svg {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 7px;
+  vertical-align: middle;
+  margin-top: -3px;
+  stroke: rgba(0, 0, 0, 0.4);
+  fill: #1dd7c2 !important;
+}
+
+.left b {
+  display: block;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.right p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 /* reponsive */
 /* Responsive layout - makes a one column layout instead of a two-column layout */
 @media (max-width: 902px) {
@@ -1123,6 +1206,14 @@ h6 {
   .grid-100 {
     clear: both;
     width: 100%;
+  }
+  .grid-65{
+    float: left;
+    width: 65%;;
+  }
+  .grid-35 {
+    float: left;
+    width: 35%;
   }
   .grid-30 {
     width: 30%;
