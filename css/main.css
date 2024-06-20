@@ -127,6 +127,23 @@ ul.menu {
   outline: 0;
 }
 
+.search-container {
+  position: relative;
+}
+
+.search-container .icon {
+  font-size: 20px;
+  color: #888;
+  cursor: pointer;
+}
+
+#image-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+
 /* css articles */
 .info-article {
   padding: 20px;
@@ -667,53 +684,31 @@ ul.menu {
   font-size: 16px;
 }
 
-/* .hoverTextEffect:hover::after,
-.hoverTextEffect:focus::after,
-.hoverTextEffect:active:after {
-  width: 100%;
-}
-
-.hoverTextEffect::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 0;
-  height: 3px;
-  background: #000;
-  transition: width 0.4s ease-in-out;
-}
-
-.hoverTextEffect:hover::after {
-  transition: width 0.4s ease-in-out;
-} */
-
 a {
   text-decoration: none;
   outline: 0;
 }
 
-.hoverTextEffect a:hover {
+.underline-effect{
   color: #333 !important;
   background-size: 100% 5%;
+  text-decoration: none;
 }
 
-.hoverTextEffect a {
+.underline-effect a:not(.epcl-button) {
   padding-bottom: 5px;
-  background-image: webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from #333,
-    to #333
-  );
-  background-image: -o-linear-gradient(left, #333 0%, #333 100%);
-  background-image: -o-linear-gradient(to right, #333 0%, #333 100%);
-  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, #333 0%, #333 100%);
   background-size: 0% 5%;
+  background-repeat: no-repeat;
   background-position: left 80%;
+  transition: all 400ms ease;
+  text-decoration: none;
+  color: #333 !important;
+}
+
+.underline-effect a:not(.epcl-button):hover {
+  color:#333 !important;
+  background-size: 100% 5%;
 }
 
 /* css avatar  */

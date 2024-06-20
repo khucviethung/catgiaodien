@@ -1252,7 +1252,7 @@ h4.product-card-title {
   padding: 8px 12px;
 }
 
-.audio-player-container button {
+.audio-player-container button:not(.audio-mute-icon) {
   display: flex;
   align-items: center;
   border: 0;
@@ -1283,9 +1283,9 @@ input[type="range" i] {
   white-space: nowrap;
 }
 
-.audio-hide {
+.audio-hide,
+.audio-hide svg {
   display: none !important;
-  visibility: visible;
 }
 
 .audio-time {
@@ -1296,6 +1296,7 @@ input[type="range" i] {
   font-weight: 500;
   line-height: 1.4em;
   white-space: nowrap;
+  margin: 0;
 }
 .audio-duration {
   padding: 0 4px;
@@ -1327,6 +1328,7 @@ input[type="range" i] {
   text-align: left;
   background: 0 0;
   white-space: nowrap;
+  margin: 0;
 }
 
 .audio-unmute-icon,
@@ -1352,12 +1354,18 @@ input[type="range" i] {
   width: 14px;
   height: 14px;
   fill: currentColor;
+  margin: 0;
+  
 }
 
-.audio-unmute-icon svg {
+.audio-unmute-icon svg,
+.audio-mute-icon svg {
   width: 16px;
   height: 16px;
   fill: currentColor;
+  margin: 0;
+  stroke: none;
+  border: none;
 }
 
 .audio-volume-slider {
@@ -1377,7 +1385,7 @@ input[type="range" i] {
 /* css html language */
 .code-toolbar {
   position: relative;
-  margin-right: 0;
+  margin-right: 0px;
 }
 
 pre[class*="language-"] {
@@ -1399,20 +1407,20 @@ pre[class*="language-"] {
   hyphens: none;
 }
 
-code[class*="language-"] {
+code[class*=language-] {
   color: black;
-    background: none;
-    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-    font-size: 15px;
-    text-align: left;
-    white-space: pre;
-    word-spacing: normal;
-    word-break: normal;
-    word-wrap: normal;
-    line-height: 1.75;
-    letter-spacing: 0.25px;
-    tab-size: 4;
-    hyphens: none;
+  background: none;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-size: 15px;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.75;
+  letter-spacing: 0.25px;
+  tab-size: 4;
+  hyphens: none;
 }
 
 .doctype {
@@ -1429,6 +1437,14 @@ code[class*="language-"] {
 
 .toolbar-item {
   display: inline-block;
+}
+
+.toolbar-item >span {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: .8em;
+  padding: 2px 10px;
+  color:#000;
 }
 
 .toolbar-item > a {
@@ -1448,28 +1464,28 @@ code[class*="language-"] {
   background: #fff;
 }
 
-.token.tag,.token.property{
-  color:#905
+.token.tag,
+.token.property {
+  color: #905;
 }
 
-.token.attr-name,.token.selector{
-  color:#690;
+.token.attr-name,
+.token.selector {
+  color: #690;
 }
 
 .token.attr-value {
-  color:#07a;
+  color: #07a;
 }
 
-.token.punctuation{
-  color:#999;
+.token.punctuation {
+  color: #999;
 }
 
 .token.string {
-  color:#9a6e3a;
+  color: #9a6e3a;
   background: rgb(255 255 255 / 50%);
 }
-
-
 
 /* reponsive */
 /* Responsive layout - makes a one column layout instead of a two-column layout */
