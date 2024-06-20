@@ -63,6 +63,11 @@
         }, 600); // 0,6s delay
         
     });
+    
+    function renderImage() {
+        const imageContainer = document.getElementById('image-container');
+        imageContainer.innerHTML = '<img src="https://via.placeholder.com/150" alt="Sample Image">';
+      }
 
     activePage(currentPage);
 });

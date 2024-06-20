@@ -1,0 +1,408 @@
+html,
+body {
+  background-color: #54cbca !important;
+  font: 16px;
+  font-family: sans-serif;
+  letter-spacing: 0.3px;
+  word-wrap: break-word;
+  /* background-image: url(https://ghost.estudiopatagon.com/groovy/assets/images/background-decoration.svg),
+    url(https://ghost.estudiopatagon.com/groovy/assets/images/background-decoration.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 9.5% 95px, 90.5% 95px;
+  background-attachment: fixed, fixed;
+  background-origin: padding-box;
+  background-size: 150px; */
+  width: auto;
+  height: auto;
+}
+
+footer {
+  background: none;
+  border:0;
+  margin-top: 120px;
+  padding: 0;
+}
+
+/* hover img all */
+/* button:hover,
+img:hover:not(.img-menu) {
+  box-shadow: 2px 2px #443c3c;
+  transform: translate3d(-2px, -2px, 0);
+  transition: transform 0.3s cubic-bezier(1, 0, 0, 1);
+  cursor: pointer;
+}
+
+button:active,
+img:active:not(.img-menu) {
+  box-shadow: 2px 2px #443c3c;
+  transform: translate3d(-2px, -2px, 0);
+} */
+
+.img-effect:hover {
+  -webkit-box-shadow: 4px 4px 4px 0px #333;
+  box-shadow: 4px 4px 4px 0px #333;
+  -webkit-transform: translate(-3px, -3px);
+  -ms-transform: translate(-3px, -3px);
+  transform: translate(-3px, -3px);
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+/* login Button */
+.signinButton:not(.nav-menu ul.menu) {
+  background-image: none;
+  background-color: #000;
+  border: 1px solid black;
+  color: #fff;
+  border-radius: 20px;
+  padding: 5px 20px;
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+
+.signinButton:not(.nav-menu ul.menu):hover {
+  box-shadow: 2px 2px #443c3c;
+  transform: translate3d(-2px, -2px, 0);
+  transition: transform 0.3s cubic-bezier(1, 0, 0, 1);
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+}
+
+/* content css */
+/* main content */
+.bg-box {
+  background-color: #fffacd;
+  border-radius: 15px;
+  border: 1px solid rgb(39 39 39 / 75%);
+}
+
+
+
+.cover {
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important;
+}
+
+
+/* buton-content-active css */
+.button-content {
+  border-radius: 25px;
+  border: 1px solid rgb(39 39 39 / 75%);
+  padding: 6px 15px;
+  line-height: 1.2;
+  display: inline-block;
+  margin-right: 0;
+  margin-bottom: 10px;
+  background: #ffffff;
+}
+
+.button-content-active {
+  display: inline-block;
+  position: relative;
+  font-family: sans-serif;
+  transform: translate(-2px, -2px);
+  box-shadow: 2px 2px 2px 0 #333;
+  border-radius: 25px;
+  border: 1px solid rgb(39 39 39 / 75%);
+  padding: 5px 25px;
+  display: inline-block;
+  margin-right: 0;
+  background: #ffffff;
+  color: #333;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 15px;
+  z-index: 2;
+}
+
+.button-content-active:hover {
+  transform: none;
+  box-shadow: none;
+  color: #333;
+}
+
+.button-content-active a:hover {
+  color: #333;
+}
+
+.meta-bottom {
+  margin-top: 40px;
+}
+
+a {
+  text-decoration: none;
+  outline: 0;
+}
+
+.hoverTextEffect a:hover {
+  color: #333 !important;
+  background-size: 100% 5%;
+}
+
+.hoverTextEffect a {
+  padding-bottom: 5px;
+  background-image: webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from #333,
+    to #333
+  );
+  background-image: -o-linear-gradient(left, #333 0%, #333 100%);
+  background-image: -o-linear-gradient(to right, #333 0%, #333 100%);
+  background-repeat: no-repeat;
+  background-size: 0% 5%;
+  background-position: left 80%;
+}
+
+
+/* css text */
+.large {
+  font-size: 34px;
+  line-height: 1.2;
+  font-family: sans-serif;
+}
+
+.description {
+  max-width: 400px;
+  margin: 0 100px;
+  font-size: 15px;
+}
+
+
+.published {
+    text-align: center;
+    margin: 0 0 20px;
+    font-size: 13px;
+}
+
+.published a {
+    font-weight: bold;
+    text-decoration: none;
+    color:#333;
+}
+
+.published a:hover{
+    color:#333
+}
+
+/* grid system size */
+.grid-container {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.grid-container::before{
+    content: ".";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+}
+
+.grid-parent {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.grid-large {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.grid-small {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+/* start css page membership here */
+.content {
+  margin-top: 50px;
+}
+
+.post-content {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+
+/* start css Sign in page here */
+.section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.underline-effect{
+    color: #333 !important;
+    background-size: 100% 5%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.underline-effect a:not(.epcl-button) {
+    padding-bottom: 5px;
+    background-image: linear-gradient(to right, #333 0%, #333 100%);
+    background-size: 0% 5%;
+    background-repeat: no-repeat;
+    background-position: left 80%;
+    transition: all 400ms ease;
+    text-decoration: none;
+    color: #333 !important;
+    cursor: pointer;
+}
+
+.underline-effect a:not(.epcl-button):hover {
+    color:#333 !important;
+    background-size: 100% 5%;
+    cursor: pointer;
+}
+
+
+.subcribe{
+    font-size: 16px;
+    position: relative;
+    z-index: 2;
+    padding: 60px 50px;
+}
+
+.title{
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.subcribe-form{
+    padding-top: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.form-group{
+    display: block;
+    position: relative;
+    width: auto;
+    max-width: 500px;
+    margin: 25px auto;
+}
+
+.form-group input {
+    text-align: left;
+    margin: 0;
+    padding-right: 175px;
+    height: 60px;
+    padding: 15px 45px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    border-radius: 100px;
+}
+
+.inputbox,input[type=email] {
+    display: block;
+    background: #fff;
+    color: #353A44;
+    font-family: sans-serif;
+    line-height: 1.8;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+    border: 1px solid rgb(39 39 39 / 75%);
+}
+
+.submit{
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    height: 47px;
+    font-size: 17px;
+    padding: 0px 35px;
+    display: inline-block;
+    color: #fff;
+    letter-spacing: 0.5px;
+    z-index: 2;
+    font-family: sans-serif;
+    font-weight: 700;
+    border-radius: 25px;
+    border: 1px solid rgb(39 39 39 / 75%);
+    background-color: #FF4C60;
+}
+
+.np-bottom a {
+    padding-bottom: 5px;
+    background-image: linear-gradient(to right,#333 0%,#333 100%);
+    background-size: 0% 5%;
+    background-repeat: no-repeat;
+    background-position: left 80%;
+    color:#333
+}
+
+.np-bottom a:hover {
+    color:#333 !important;
+    background-size: 100% 5%;
+    text-decoration: none;
+}
+
+.np-bottom {
+    padding-bottom: 0 !important;
+}
+
+form p {
+    font-size: 13px;
+}
+
+
+
+
+
+/* reponsive */
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 902px) {
+  .menu-flex-container {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: max-content;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .grid-container {
+    max-width: 1100px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid-70 {
+    float: left;
+    width: 70%;
+  }
+  .grid-100 {
+    clear: both;
+    width: 100%;
+  }
+  .grid-30 {
+    width: 30%;
+  }
+  .grid-33 {
+    width: 33.333333%;
+  }
+}

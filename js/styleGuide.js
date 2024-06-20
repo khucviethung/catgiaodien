@@ -33,12 +33,14 @@ document.addEventListener('DOMContentLoaded', () => {
         audio.play();
         playButton.classList.add('audio-hide');
         pauseButton.classList.remove('audio-hide');
+        pauseButton.style.left = "-5px";
     });
 
     pauseButton.addEventListener('click', () => {
         audio.pause();
         pauseButton.classList.add('audio-hide');
         playButton.classList.remove('audio-hide');
+        pauseButton.style.left = "-5px";
     });
 
     // Update the current time and duration
@@ -57,30 +59,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Âm lượng
-    volumeSlider.addEventListener('input', () => {
-        audio.volume = volumeSlider.value / 100;
+    volumeSlider.addEventListener('input', (e) => {
+        audio.volume = e.target.value / 100;
         if (audio.volume === 0) {
-            muteButton.classList.remove('audio-hide');
-            unmuteButton.classList.add('audio-hide');
+            audio.muted = true;
         } else {
-            muteButton.classList.add('audio-hide');
-            unmuteButton.classList.remove('audio-hide');
+            audio.muted = false;
+            ;
         }
     });
 
     // Mute và unmute
-    muteButton.addEventListener('click', () => {
-        audio.volume = 0;
-        volumeSlider.value = 0;
-        muteButton.classList.add('audio-hide');
-        unmuteButton.classList.remove('audio-hide');
-    });
-
     unmuteButton.addEventListener('click', () => {
-        audio.volume = 1;
-        volumeSlider.value = 100;
+        audio.muted = true;
         unmuteButton.classList.add('audio-hide');
         muteButton.classList.remove('audio-hide');
+    });
+
+    muteButton.addEventListener('click', () => {
+        audio.muted = false;
+        muteButton.classList.add('audio-hide');
+        unmuteButton.classList.remove('audio-hide');
     });
 
     // tốc độ của audio

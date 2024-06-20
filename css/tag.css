@@ -1179,6 +1179,28 @@ h6 {
   margin: 0 auto;
 }
 
+.underline-effect{
+  color: #333 !important;
+  background-size: 100% 5%;
+  text-decoration: none;
+}
+
+.underline-effect a:not(.epcl-button) {
+  padding-bottom: 5px;
+  background-image: linear-gradient(to right, #333 0%, #333 100%);
+  background-size: 0% 5%;
+  background-repeat: no-repeat;
+  background-position: left 80%;
+  transition: all 400ms ease;
+  text-decoration: none;
+  color: #333 !important;
+}
+
+.underline-effect a:not(.epcl-button):hover {
+  color:#333 !important;
+  background-size: 100% 5%;
+}
+
 /* reponsive */
 /* Responsive layout - makes a one column layout instead of a two-column layout */
 @media (max-width: 902px) {
