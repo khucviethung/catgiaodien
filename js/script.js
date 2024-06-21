@@ -64,6 +64,7 @@
         
     });
     
+    activePage(currentPage);
 });
 
 
